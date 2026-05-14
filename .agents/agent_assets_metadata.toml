@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "iIXOUv5RJxWjqL2wnIywF"
+uri = "file://assets/spotsylvania-rfc-crest-nobg.png"
+type = "image"
+title = "Spotsylvania RFC Crest (No Background)"
