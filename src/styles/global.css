@@ -1,5 +1,5 @@
 /* ============================================================
-   SPOTSYLVANIA RFC — STYLESHEET
+   SPOTSYLVANIA RFC — GLOBAL STYLESHEET
    Organisation: variables → global → accessibility →
                  nav → hero → buttons → sections →
                  pillars → stripe → interest note →
@@ -514,6 +514,13 @@ select option {
 textarea {
   resize: vertical;
   min-height: 100px;
+}
+
+.field-hint {
+  font-size: .8rem;
+  color: rgba(245, 239, 227, .4);
+  line-height: 1.5;
+  margin-top: 2px;
 }
 
 .microcopy {

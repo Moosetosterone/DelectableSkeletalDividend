@@ -1,0 +1,137 @@
+Refactor this project for **Phase 1** of the Spotsylvania RFC website.
+
+Current goal:
+This is a small landing page for a rugby football club in formation. The site should be fast, simple, SEO-friendly, easy to edit, and focused on collecting interest from parents, youth players, adult players, coaches, volunteers, sponsors, and supporters.
+
+Do **not** build a full club portal yet. Do **not** add authentication, rosters, payments, dashboards, or database complexity yet.
+
+Phase 1 goals:
+
+1. Keep the landing page visually close to the current design.
+2. Use local project assets instead of Google Drive image links.
+3. Make the form ready to connect to a simple form provider.
+4. Organize the code so it can grow later.
+5. Keep the site static, fast, and easy to deploy.
+
+Recommended stack:
+
+* Astro preferred
+* Plain CSS is fine
+* Do not add React unless there is a specific need
+* Do not add Supabase yet
+* Do not add Stripe yet
+* Do not add authentication yet
+
+Project structure:
+Create or refactor toward this structure:
+
+/src
+/components
+Header.astro
+Hero.astro
+Pillars.astro
+RugbyPanel.astro
+InterestSection.astro
+Footer.astro
+/layouts
+BaseLayout.astro
+/pages
+index.astro
+/styles
+global.css
+/public
+/assets
+spotsylvania-rfc-crest.png
+
+Logo:
+
+* The hero logo should be loaded from:
+  /assets/spotsylvania-rfc-crest.png
+* Do not use Google Drive image links.
+* The image should be a transparent PNG.
+* If the image shows a checkerboard background, that means the checkerboard is baked into the image and the file needs to be replaced.
+
+Content / branding:
+
+* Club name: Spotsylvania Rugby Football Club
+* Short name: Spotsylvania RFC
+* Public-facing hero title: Spotsylvania Rugby Club
+* Founding date: Est. 2026
+* Motto line: Unity · Courage · Service
+* CTA: Join the Founding List
+* Tone: classic, traditional, heritage rugby club; subtle virtue/community feel; not overtly religious
+
+Form:
+The form should remain simple but useful for gauging interest.
+
+Fields:
+
+* First name
+* Last name
+* Email address
+* Phone number optional
+* Participant Age / Grade
+* Rugby experience
+* How would you like to be involved?
+* Optional message
+
+Change the “Age Group” dropdown to “Participant Age / Grade” with these options:
+
+* Parent / guardian — child under 6
+* Elementary — K–2nd grade
+* Elementary — 3rd–5th grade
+* Middle school — 6th–8th grade
+* High school — 9th–10th grade
+* High school — 11th–12th grade
+* Adult — 18–34
+* Adult — 35–49
+* Adult — 50+
+* Coach / volunteer / referee
+* Sponsor / supporter
+
+Add small helper text below this field:
+“Youth groups will be organized by age, grade, and registration requirements once interest is measured.”
+
+Form handling:
+
+* For now, make the form ready to connect to Formspree, Tally, Netlify Forms, or another simple form service.
+* Add clear comments showing where the form action URL should go.
+* Keep the current client-side success message if no provider is connected.
+* Do not store form submissions in a custom database yet.
+
+SEO:
+Add basic SEO metadata:
+
+* title
+* description
+* Open Graph title
+* Open Graph description
+* Open Graph image placeholder using the crest or a future social preview image
+* canonical placeholder comment
+
+Performance:
+
+* Keep the landing page mostly static HTML/CSS.
+* Avoid unnecessary JavaScript.
+* Avoid loading unused libraries.
+* Keep animations subtle.
+* Ensure the page is mobile responsive.
+
+Accessibility:
+
+* Use semantic sections.
+* Preserve meaningful alt text for the crest.
+* Ensure form labels are associated with inputs.
+* Ensure color contrast remains readable.
+* Buttons and links should be keyboard accessible.
+
+Deliverables:
+
+1. Working Astro site, or if Astro setup is too much, a clean static HTML/CSS version with organized files.
+2. Local logo asset path working.
+3. Updated age/grade dropdown.
+4. Form ready for a simple provider.
+5. Clear comments in the code explaining where to update the form provider and logo asset.
+6. A short README explaining how to run, edit, and deploy the site.
+
+Do not redesign the site unless necessary. Preserve the current visual identity.

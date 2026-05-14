@@ -1,0 +1,164 @@
+---
+// RegistrationForm.astro — founding interest sign-up form
+//
+// FORM PROVIDER SETUP
+// -------------------
+// Currently the form uses client-side JS to show a success message.
+// To connect a real form provider, choose one of the options below:
+//
+// Option A — Formspree (https://formspree.io)
+//   1. Create a free account and get your form endpoint.
+//   2. Set the <form> action to your endpoint URL, e.g.:
+//        action="https://formspree.io/f/YOUR_FORM_ID"
+//   3. Set method="POST" on the <form> element.
+//   4. You can keep or remove the JS success handler — Formspree handles redirects.
+//
+// Option B — Tally (https://tally.so)
+//   Embed the Tally iframe instead of this form, or use their webhook to a custom form.
+//
+// Option C — Netlify Forms
+//   Add netlify to the <form> tag: <form name="interest" netlify ...>
+//   Netlify automatically detects and activates the form on deploy.
+//
+// Option D — Any other provider
+//   Set action="YOUR_ENDPOINT" method="POST" and remove the onclick handler.
+---
+
+<section class="form-section" id="interest" aria-label="Register your interest">
+  <div class="container">
+    <article class="form-inner">
+      <hgroup>
+        <p class="section-label">Get Involved</p>
+        <h2 class="section-title">Join the<br><em>Founding List</em></h2>
+        <p class="section-body">
+          Tell us who you are and how you might like to be involved. Every
+          response helps measure whether Spotsylvania Rugby Football Club can
+          move from idea to reality.
+        </p>
+      </hgroup>
+
+      <!--
+        TODO: Replace action="#" with your form provider URL (see options above).
+        TODO: Add method="POST" when connecting a real provider.
+      -->
+      <form class="interest-form" id="interestForm" action="#" method="POST">
+
+        <div class="form-row">
+          <div class="field-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="James" required>
+          </div>
+          <div class="field-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="McAllister" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="james@example.com" required>
+          </div>
+          <div class="field-group">
+            <label for="phone">Phone Number <small>(optional)</small></label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field-group">
+            <label for="age">Age Group</label>
+            <select id="age" name="age">
+              <option value="">Select…</option>
+              <option>Elementary — K–2nd grade</option>
+              <option>Elementary — 3rd–5th grade</option>
+              <option>Middle school — 6th–8th grade</option>
+              <option>High school — 9th–10th grade</option>
+              <option>High school — 11th–12th grade</option>
+              <option>Adult — 18–34</option>
+              <option>Adult — 35–49</option>
+              <option>Adult — 50+</option>
+              <option>Parent / guardian</option>
+              <option>Coach / volunteer / referee</option>
+              <option>Sponsor / supporter</option>
+            </select>
+            <p class="field-hint">
+              Youth groups will be organized by age, grade, and registration
+              requirements once interest is measured.
+            </p>
+          </div>
+          <div class="field-group">
+            <label for="experience">Rugby Experience</label>
+            <select id="experience" name="experience">
+              <option value="">Select…</option>
+              <option>None — complete beginner</option>
+              <option>Watched and interested</option>
+              <option>Played recreationally</option>
+              <option>Played at school or club level</option>
+              <option>Played at competitive level</option>
+              <option>Coached or refereed</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field-group">
+          <label for="role">How would you like to be involved?</label>
+          <select id="role" name="role">
+            <option value="">Select…</option>
+            <option>Player</option>
+            <option>Parent of a potential player</option>
+            <option>Coach or assistant coach</option>
+            <option>Referee</option>
+            <option>Volunteer / team manager</option>
+            <option>Athletic trainer / medic</option>
+            <option>Sponsor or local business</option>
+            <option>Supporter / fan</option>
+          </select>
+        </div>
+
+        <div class="field-group">
+          <label for="message">Anything else you'd like to share? <small>(optional)</small></label>
+          <textarea id="message" name="message" placeholder="Questions, ideas, or just a word of support…"></textarea>
+        </div>
+
+        <!--
+          TODO: When connecting a real provider, change onclick to standard form submit
+          and remove the client-side success handler below.
+        -->
+        <button type="button" class="btn-primary" onclick="handleInterestSubmit()">
+          Submit — Join the List
+        </button>
+
+        <p class="microcopy">
+          No spam, ever. Your information is used only to gauge interest and
+          contact you about Spotsylvania RFC's first meeting.
+        </p>
+
+        <div class="success-msg" id="successMsg">
+          <strong>You're on the list.</strong> Thank you for registering your
+          interest. We'll be in touch when we have enough people to schedule
+          the first meeting.
+        </div>
+
+      </form>
+    </article>
+  </div>
+</section>
+
+<script>
+  // Client-side success message — remove this block once a real form provider
+  // is connected (the provider will handle post-submit redirect/confirmation).
+  function handleInterestSubmit() {
+    const form = document.getElementById('interestForm') as HTMLFormElement;
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+    form.style.display = 'none';
+    const msg = document.getElementById('successMsg');
+    if (msg) msg.style.display = 'block';
+  }
+
+  // Expose to onclick attribute
+  (window as any).handleInterestSubmit = handleInterestSubmit;
+</script>

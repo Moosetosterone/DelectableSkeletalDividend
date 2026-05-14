@@ -1,0 +1,26 @@
+---
+// index.astro — Spotsylvania RFC founding interest landing page
+import BaseLayout       from '../layouts/BaseLayout.astro';
+import Header           from '../components/Header.astro';
+import Hero             from '../components/Hero.astro';
+import Pillars          from '../components/Pillars.astro';
+import StripeQuote      from '../components/StripeQuote.astro';
+import InterestSection  from '../components/InterestSection.astro';
+import RegistrationForm from '../components/RegistrationForm.astro';
+import Footer           from '../components/Footer.astro';
+import '../styles/global.css';
+---
+
+<BaseLayout>
+  <Header />
+
+  <main class="container" id="main-content">
+    <Hero />
+    <Pillars />
+    <StripeQuote />
+    <InterestSection />
+  </main>
+
+  <RegistrationForm />
+  <Footer />
+</BaseLayout>

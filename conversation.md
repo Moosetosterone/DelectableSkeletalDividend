@@ -1,1 +1,0 @@
-User wants to export the updated landing page HTML and then set up Replit so the crest image is a local asset, avoiding Google Drive thumbnail/checkerboard issues. The HTML references assets/spotsylvania-rfc-crest.png.

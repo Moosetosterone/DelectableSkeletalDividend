@@ -1,0 +1,41 @@
+---
+// Hero.astro — full-viewport hero section
+// Logo path: /assets/spotsylvania-rfc-crest.png (served from public/assets/)
+// To swap the logo, replace the image in public/assets/ and update src below.
+---
+
+<section class="hero">
+  <p class="hero-badge">Est. 2026 · Founding Interest Wanted</p>
+
+  <figure class="crest">
+    <!-- Logo loaded from public/assets/ — replace file to update the crest -->
+    <img
+      src="/assets/spotsylvania-rfc-crest.png"
+      alt="Spotsylvania RFC crest with rugby ball, oak leaves, and Est. 2026"
+      width="300"
+      height="300"
+    >
+  </figure>
+
+  <hgroup>
+    <h1 class="hero-title">
+      <span class="place">Spotsylvania</span>
+      <span class="club">Rugby Football Club</span>
+    </h1>
+    <p class="hero-sub">Unity · Courage · Service</p>
+  </hgroup>
+
+  <div class="divider-gold"></div>
+
+  <p class="hero-copy">
+    We are gauging interest in forming a rugby football club for Spotsylvania
+    and the surrounding communities. Whether you are a former player, complete
+    beginner, parent, coach, volunteer, sponsor, or supporter, this is an
+    invitation to help determine whether the club has the people to begin.
+  </p>
+
+  <div class="hero-cta">
+    <a href="#interest" class="btn-primary">Join the Founding List</a>
+    <a href="#vision"   class="btn-secondary">Learn the vision</a>
+  </div>
+</section>

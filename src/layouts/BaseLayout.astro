@@ -1,0 +1,52 @@
+---
+// BaseLayout.astro — shared HTML shell for all pages
+// Update the SEO props below for each page that uses this layout.
+export interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+}
+
+const {
+  title       = 'Spotsylvania RFC — Join the Founding List',
+  description = 'Help gauge interest in forming Spotsylvania Rugby Football Club — a traditional rugby club rooted in unity, courage, service, fellowship, and local pride.',
+  ogImage     = '/assets/spotsylvania-rfc-crest.png',
+} = Astro.props;
+
+// TODO: Replace this placeholder with your canonical domain once deployed
+// e.g. const canonicalURL = new URL(Astro.url.pathname, 'https://spotsylvaniarfc.com');
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Primary SEO -->
+  <title>{title}</title>
+  <meta name="description" content={description} />
+
+  <!-- TODO: Uncomment and update once canonical domain is confirmed -->
+  <!-- <link rel="canonical" href={canonicalURL} /> -->
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image"       content={ogImage} />
+  <!-- TODO: Set og:url once the domain is live -->
+  <!-- <meta property="og:url" content={canonicalURL} /> -->
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Pico CSS (base reset + utility classes) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+  <slot />
+</body>
+</html>
