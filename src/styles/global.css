@@ -1,6 +1,6 @@
 /* ============================================================
    SPOTSYLVANIA RFC — GLOBAL STYLESHEET
-   Organisation: variables → global → accessibility →
+   Organization: variables → global → accessibility →
                  nav → hero → buttons → sections →
                  pillars → stripe → interest note →
                  form → footer → animations → responsive
@@ -14,6 +14,7 @@
   --green: #1a3a2a;
   --gold:  #c8963e;
   --cream: #f5efe3;
+  --light: #ede4d3;
   --text:  #1c1208;
   --muted: #6b5e4a;
 
@@ -121,7 +122,11 @@ nav a {
 }
 
 nav a:hover        { color: var(--gold); }
-nav a[role=button] { color: var(--navy); }
+nav a[role=button] {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: var(--navy);
+}
 
 
 /* --- Hero ------------------------------------------------- */
@@ -194,7 +199,7 @@ nav a[role=button] { color: var(--navy); }
 
 .club {
   color: var(--cream);
-  font-size: clamp(1.3rem, 3vw, 2.6rem);
+  font-size: clamp(1.8rem, 4vw, 3.4rem);
   letter-spacing: .01em;
 }
 
@@ -272,6 +277,10 @@ button.btn-primary {
   text-decoration: none;
   border-bottom: 1px solid rgba(200, 150, 62, .55);
   padding: 0 0 6px;
+}
+
+.btn-secondary:hover {
+  color: var(--gold);
 }
 
 
@@ -575,6 +584,10 @@ footer small {
 footer a {
   color: rgba(245, 239, 227, .55);
   text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--gold);
 }
 
 
