@@ -20,16 +20,16 @@ This document is the working source of truth for Spotsylvania Rugby Football Clu
 
 ## Naming architecture
 
-| Use case | Preferred name |
-|---|---|
-| Legal / formal | Spotsylvania Rugby Football Club |
-| Primary public identity | Spotsylvania RFC |
-| Plain-language public use | Spotsylvania Rugby |
-| Youth program | Spotsylvania Youth Rugby |
-| Tag rugby program | Spotsylvania Tag Rugby |
-| Optional youth/social shorthand | Spotsy Rugby |
-| Practical monogram | SRFC |
-| Secondary graphic code | SPLV |
+| Use case                        | Preferred name                   |
+| ------------------------------- | -------------------------------- |
+| Legal / formal                  | Spotsylvania Rugby Football Club |
+| Primary public identity         | Spotsylvania RFC                 |
+| Plain-language public use       | Spotsylvania Rugby               |
+| Youth program                   | Spotsylvania Youth Rugby         |
+| Tag rugby program               | Spotsylvania Tag Rugby           |
+| Optional youth/social shorthand | Spotsy Rugby                     |
+| Practical monogram              | SRFC                             |
+| Secondary graphic code          | SPLV                             |
 
 ## Naming rules
 

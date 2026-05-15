@@ -190,7 +190,7 @@ Tell us who you are and how you might like to be involved. Every response helps 
 
 ### Participant Age / Grade options
 
-- Parent / guardian — child under 
+- Parent / guardian — child under
 - Elementary — K–2nd grade
 - Elementary — 3rd–5th grade
 - Middle school — 6th–8th grade

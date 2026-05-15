@@ -25,46 +25,39 @@ const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mqenvybp';
     <article class="form-inner">
       <hgroup>
         <p class="section-label">Put Your Hand Up</p>
-        <h2 class="section-title">Join the<br><em>Founding List</em></h2>
+        <h2 class="section-title">Join the<br /><em>Founding List</em></h2>
         <p class="section-body">
-          Tell us who you are and how you might like to be involved. Every
-          response helps measure whether Spotsylvania Rugby Football Club can
-          move from idea to reality.
+          Tell us who you are and how you might like to be involved. Every response helps measure
+          whether Spotsylvania Rugby Football Club can move from idea to reality.
         </p>
       </hgroup>
 
       <div class="success-msg" id="successMsg" role="status" aria-live="polite">
-        <strong>Thanks — you are on the founding list.</strong> We will be in
-        touch as interest builds. The next step would be an interest meeting
-        and a clearer plan for players, families, volunteers, and supporters.
+        <strong>Thanks — you are on the founding list.</strong> We will be in touch as interest builds.
+        The next step would be an interest meeting and a clearer plan for players, families, volunteers,
+        and supporters.
       </div>
 
-      <form
-        class="interest-form"
-        id="interestForm"
-        action={FORMSPREE_ENDPOINT}
-        method="POST"
-      >
-
+      <form class="interest-form" id="interestForm" action={FORMSPREE_ENDPOINT} method="POST">
         <div class="form-row">
           <div class="field-group">
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="James" required>
+            <input type="text" id="fname" name="firstname" placeholder="James" required />
           </div>
           <div class="field-group">
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="McAllister" required>
+            <input type="text" id="lname" name="lastname" placeholder="McAllister" required />
           </div>
         </div>
 
         <div class="form-row">
           <div class="field-group">
             <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="james@example.com" required>
+            <input type="email" id="email" name="email" placeholder="james@example.com" required />
           </div>
           <div class="field-group">
             <label for="phone">Phone Number <small>(optional)</small></label>
-            <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+            <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" />
           </div>
         </div>
 
@@ -86,8 +79,8 @@ const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mqenvybp';
               <option>Sponsor / supporter</option>
             </select>
             <p class="field-hint">
-              Youth groups will be organized by age, grade, and registration
-              requirements once interest is measured.
+              Youth groups will be organized by age, grade, and registration requirements once
+              interest is measured.
             </p>
           </div>
           <div class="field-group">
@@ -121,31 +114,30 @@ const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mqenvybp';
 
         <div class="field-group">
           <label for="message">Anything else you'd like to share? <small>(optional)</small></label>
-          <textarea id="message" name="message" placeholder="Questions, ideas, or just a word of support…"></textarea>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Questions, ideas, or just a word of support…"></textarea>
         </div>
 
-        <button type="submit" class="btn-primary" id="submitBtn">
-          Register My Interest
-        </button>
+        <button type="submit" class="btn-primary" id="submitBtn"> Register My Interest </button>
 
         <p class="form-error" id="formError" role="alert" aria-live="assertive"></p>
 
         <p class="microcopy">
-          No commitment required. This list is simply the first practical step
-          toward an interest meeting, early training plans, and a possible
-          first season.
+          No commitment required. This list is simply the first practical step toward an interest
+          meeting, early training plans, and a possible first season.
         </p>
-
       </form>
     </article>
   </div>
 </section>
 
 <script>
-  const form    = document.getElementById('interestForm') as HTMLFormElement;
+  const form = document.getElementById('interestForm') as HTMLFormElement;
   const success = document.getElementById('successMsg') as HTMLElement;
-  const errEl   = document.getElementById('formError')  as HTMLElement;
-  const btn     = document.getElementById('submitBtn')  as HTMLButtonElement;
+  const errEl = document.getElementById('formError') as HTMLElement;
+  const btn = document.getElementById('submitBtn') as HTMLButtonElement;
 
   form?.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -167,8 +159,7 @@ const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mqenvybp';
       } else {
         const data = await res.json().catch(() => ({}));
         errEl.textContent =
-          (data as any)?.error ||
-          'Something went wrong. Please try again or email us directly.';
+          (data as any)?.error || 'Something went wrong. Please try again or email us directly.';
         btn.disabled = false;
         btn.textContent = 'Register My Interest';
       }

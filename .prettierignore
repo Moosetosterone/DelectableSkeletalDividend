@@ -1,0 +1,12 @@
+# Replit internals
+.local/
+.cache/
+.config/
+.upm/
+
+# Build output
+dist/
+node_modules/
+
+# Lock files
+package-lock.json

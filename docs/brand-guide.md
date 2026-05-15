@@ -48,19 +48,19 @@ The Catholic-adjacent tone should come through virtue language, tradition, servi
 
 ### Primary colors
 
-| Color | Hex | Use |
-|---|---:|---|
-| Deep Navy | `#0D1F2D` | Primary background, formal identity, nav, dark apparel |
-| Forest Green | `#1A3A2A` | Rugby field, secondary panels, alternate kit |
-| Antique Gold | `#C8963E` | Crest linework, buttons, trim, ceremonial details |
-| Cream / Parchment | `#F5EFE3` | Warm backgrounds, text on dark fields |
+| Color             |       Hex | Use                                                    |
+| ----------------- | --------: | ------------------------------------------------------ |
+| Deep Navy         | `#0D1F2D` | Primary background, formal identity, nav, dark apparel |
+| Forest Green      | `#1A3A2A` | Rugby field, secondary panels, alternate kit           |
+| Antique Gold      | `#C8963E` | Crest linework, buttons, trim, ceremonial details      |
+| Cream / Parchment | `#F5EFE3` | Warm backgrounds, text on dark fields                  |
 
 ### Supporting colors
 
-| Color | Hex | Use |
-|---|---:|---|
-| Warm Light | `#EDE4D3` | Secondary panels |
-| Dark Text | `#1C1208` | Body copy |
+| Color       |       Hex | Use                   |
+| ----------- | --------: | --------------------- |
+| Warm Light  | `#EDE4D3` | Secondary panels      |
+| Dark Text   | `#1C1208` | Body copy             |
 | Muted Brown | `#6B5E4A` | Captions, helper text |
 
 ### Color hierarchy
@@ -71,11 +71,11 @@ Avoid using gold as a large background color. It works best as trim, linework, b
 
 ## Typography
 
-| Use | Font |
-|---|---|
-| Display / heritage headings | Playfair Display |
-| Body copy | Libre Baskerville |
-| Labels / buttons / nav | Oswald |
+| Use                         | Font              |
+| --------------------------- | ----------------- |
+| Display / heritage headings | Playfair Display  |
+| Body copy                   | Libre Baskerville |
+| Labels / buttons / nav      | Oswald            |
 
 Use Playfair Display for major headings, formal print pieces, hero text, and ceremonial language. Use Libre Baskerville for paragraphs and longer copy. Use Oswald for navigation, labels, buttons, badges, and short uppercase text.
 

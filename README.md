@@ -55,11 +55,11 @@ The form in `src/components/RegistrationForm.astro` is ready to connect to any s
 
 **Supported options (all free tiers available):**
 
-| Provider | Notes |
-|----------|-------|
-| [Formspree](https://formspree.io) | Set `action="https://formspree.io/f/YOUR_ID"` and `method="POST"` |
-| [Tally](https://tally.so) | Embed a Tally iframe or use their webhook |
-| [Netlify Forms](https://docs.netlify.com/forms/setup/) | Add `netlify` attribute to `<form>` tag, deploy to Netlify |
+| Provider                                               | Notes                                                             |
+| ------------------------------------------------------ | ----------------------------------------------------------------- |
+| [Formspree](https://formspree.io)                      | Set `action="https://formspree.io/f/YOUR_ID"` and `method="POST"` |
+| [Tally](https://tally.so)                              | Embed a Tally iframe or use their webhook                         |
+| [Netlify Forms](https://docs.netlify.com/forms/setup/) | Add `netlify` attribute to `<form>` tag, deploy to Netlify        |
 
 ---
 
