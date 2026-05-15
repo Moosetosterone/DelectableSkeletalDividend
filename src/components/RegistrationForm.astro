@@ -34,9 +34,9 @@ const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mqenvybp';
       </hgroup>
 
       <div class="success-msg" id="successMsg" role="status" aria-live="polite">
-        <strong>You're on the list.</strong> Thank you for registering your
-        interest. We'll be in touch when we have enough people to schedule
-        the first meeting.
+        <strong>Thanks — you are on the founding list.</strong> We will be in
+        touch as interest builds. The next step would be an interest meeting
+        and a clearer plan for players, families, volunteers, and supporters.
       </div>
 
       <form
@@ -70,9 +70,10 @@ const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mqenvybp';
 
         <div class="form-row">
           <div class="field-group">
-            <label for="age">Age Group</label>
+            <label for="age">Participant Age / Grade</label>
             <select id="age" name="age">
               <option value="">Select…</option>
+              <option>Parent / guardian — child under 6</option>
               <option>Elementary — K–2nd grade</option>
               <option>Elementary — 3rd–5th grade</option>
               <option>Middle school — 6th–8th grade</option>
@@ -125,14 +126,15 @@ const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mqenvybp';
         </div>
 
         <button type="submit" class="btn-primary" id="submitBtn">
-          Submit — Join the List
+          Register My Interest
         </button>
 
         <p class="form-error" id="formError" role="alert" aria-live="assertive"></p>
 
         <p class="microcopy">
-          No spam, ever. Your information is used only to gauge interest and
-          contact you about Spotsylvania RFC's first meeting.
+          No commitment required. This list is simply the first practical step
+          toward an interest meeting, early training plans, and a possible
+          first season.
         </p>
 
       </form>
@@ -169,12 +171,12 @@ const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mqenvybp';
           (data as any)?.error ||
           'Something went wrong. Please try again or email us directly.';
         btn.disabled = false;
-        btn.textContent = 'Submit — Join the List';
+        btn.textContent = 'Register My Interest';
       }
     } catch {
       errEl.textContent = 'Network error. Please check your connection and try again.';
       btn.disabled = false;
-      btn.textContent = 'Submit — Join the List';
+      btn.textContent = 'Register My Interest';
     }
   });
 </script>
