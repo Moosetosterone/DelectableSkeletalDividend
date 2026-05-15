@@ -127,14 +127,14 @@ nav a[role=button] { color: var(--navy); }
 /* --- Hero ------------------------------------------------- */
 
 .hero {
-  min-height: 100vh;
+  min-height: 88vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 112px 24px 92px;
+  padding: 96px 24px 72px;
   position: relative;
   background-color: var(--navy);
   background-image:
@@ -523,6 +523,14 @@ textarea {
   margin-top: 2px;
 }
 
+.form-error {
+  color: #f28b82;
+  font-size: .88rem;
+  line-height: 1.55;
+  min-height: 1.2em;
+  margin-top: 4px;
+}
+
 .microcopy {
   margin-top: 16px;
   color: rgba(245, 239, 227, .48);
@@ -575,6 +583,28 @@ footer a {
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Respect reduced-motion preference — skip all fade-in animations */
+@media (prefers-reduced-motion: reduce) {
+  .hero-badge,
+  .crest,
+  .hero-title,
+  .hero-sub,
+  .divider-gold,
+  .hero-copy,
+  .hero-cta {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+
+  html { scroll-behavior: auto; }
+
+  .btn-primary:hover,
+  .pillar:hover {
+    transform: none;
+  }
 }
 
 

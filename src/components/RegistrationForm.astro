@@ -1,27 +1,23 @@
 ---
 // RegistrationForm.astro — founding interest sign-up form
 //
-// FORM PROVIDER SETUP
-// -------------------
-// Currently the form uses client-side JS to show a success message.
-// To connect a real form provider, choose one of the options below:
+// FORM PROVIDER SETUP (Formspree — recommended)
+// -----------------------------------------------
+// 1. Create a free account at https://formspree.io
+// 2. Create a new form and copy your endpoint URL, e.g.:
+//      https://formspree.io/f/abcdefgh
+// 3. Replace the FORMSPREE_ENDPOINT value below with your URL.
 //
-// Option A — Formspree (https://formspree.io)
-//   1. Create a free account and get your form endpoint.
-//   2. Set the <form> action to your endpoint URL, e.g.:
-//        action="https://formspree.io/f/YOUR_FORM_ID"
-//   3. Set method="POST" on the <form> element.
-//   4. You can keep or remove the JS success handler — Formspree handles redirects.
+// That's it. The form uses fetch() so the visitor never leaves the page.
+// All submissions appear in your Formspree dashboard and are emailed to you.
 //
-// Option B — Tally (https://tally.so)
-//   Embed the Tally iframe instead of this form, or use their webhook to a custom form.
+// OTHER PROVIDERS
+// ---------------
+// Netlify Forms: add  data-netlify="true" name="interest"  to the <form> tag
+//   and remove the <script> block below.
+// Tally: replace this entire component with your Tally iframe embed code.
 //
-// Option C — Netlify Forms
-//   Add netlify to the <form> tag: <form name="interest" netlify ...>
-//   Netlify automatically detects and activates the form on deploy.
-//
-// Option D — Any other provider
-//   Set action="YOUR_ENDPOINT" method="POST" and remove the onclick handler.
+const FORMSPREE_ENDPOINT = 'YOUR_FORMSPREE_ENDPOINT'; // ← replace this
 ---
 
 <section class="form-section" id="interest" aria-label="Register your interest">
@@ -37,11 +33,18 @@
         </p>
       </hgroup>
 
-      <!--
-        TODO: Replace action="#" with your form provider URL (see options above).
-        TODO: Add method="POST" when connecting a real provider.
-      -->
-      <form class="interest-form" id="interestForm" action="#" method="POST">
+      <div class="success-msg" id="successMsg" role="status" aria-live="polite">
+        <strong>You're on the list.</strong> Thank you for registering your
+        interest. We'll be in touch when we have enough people to schedule
+        the first meeting.
+      </div>
+
+      <form
+        class="interest-form"
+        id="interestForm"
+        action={FORMSPREE_ENDPOINT}
+        method="POST"
+      >
 
         <div class="form-row">
           <div class="field-group">
@@ -121,24 +124,16 @@
           <textarea id="message" name="message" placeholder="Questions, ideas, or just a word of support…"></textarea>
         </div>
 
-        <!--
-          TODO: When connecting a real provider, change onclick to standard form submit
-          and remove the client-side success handler below.
-        -->
-        <button type="button" class="btn-primary" onclick="handleInterestSubmit()">
+        <button type="submit" class="btn-primary" id="submitBtn">
           Submit — Join the List
         </button>
+
+        <p class="form-error" id="formError" role="alert" aria-live="assertive"></p>
 
         <p class="microcopy">
           No spam, ever. Your information is used only to gauge interest and
           contact you about Spotsylvania RFC's first meeting.
         </p>
-
-        <div class="success-msg" id="successMsg">
-          <strong>You're on the list.</strong> Thank you for registering your
-          interest. We'll be in touch when we have enough people to schedule
-          the first meeting.
-        </div>
 
       </form>
     </article>
@@ -146,19 +141,40 @@
 </section>
 
 <script>
-  // Client-side success message — remove this block once a real form provider
-  // is connected (the provider will handle post-submit redirect/confirmation).
-  function handleInterestSubmit() {
-    const form = document.getElementById('interestForm') as HTMLFormElement;
-    if (!form.checkValidity()) {
-      form.reportValidity();
-      return;
-    }
-    form.style.display = 'none';
-    const msg = document.getElementById('successMsg');
-    if (msg) msg.style.display = 'block';
-  }
+  const form    = document.getElementById('interestForm') as HTMLFormElement;
+  const success = document.getElementById('successMsg') as HTMLElement;
+  const errEl   = document.getElementById('formError')  as HTMLElement;
+  const btn     = document.getElementById('submitBtn')  as HTMLButtonElement;
 
-  // Expose to onclick attribute
-  (window as any).handleInterestSubmit = handleInterestSubmit;
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    errEl.textContent = '';
+    btn.disabled = true;
+    btn.textContent = 'Sending…';
+
+    try {
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' },
+      });
+
+      if (res.ok) {
+        form.style.display = 'none';
+        success.style.display = 'block';
+        success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      } else {
+        const data = await res.json().catch(() => ({}));
+        errEl.textContent =
+          (data as any)?.error ||
+          'Something went wrong. Please try again or email us directly.';
+        btn.disabled = false;
+        btn.textContent = 'Submit — Join the List';
+      }
+    } catch {
+      errEl.textContent = 'Network error. Please check your connection and try again.';
+      btn.disabled = false;
+      btn.textContent = 'Submit — Join the List';
+    }
+  });
 </script>

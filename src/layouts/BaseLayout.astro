@@ -1,6 +1,5 @@
 ---
 // BaseLayout.astro — shared HTML shell for all pages
-// Update the SEO props below for each page that uses this layout.
 export interface Props {
   title?: string;
   description?: string;
@@ -13,8 +12,11 @@ const {
   ogImage     = '/assets/spotsylvania-rfc-crest.png',
 } = Astro.props;
 
-// TODO: Replace this placeholder with your canonical domain once deployed
-// e.g. const canonicalURL = new URL(Astro.url.pathname, 'https://spotsylvaniarfc.com');
+// Absolute URLs required for og:image and canonical to work in social previews.
+// Update astro.config.mjs `site` when the real domain is confirmed.
+const siteBase    = Astro.site ?? new URL('https://spotsylvania-rfc.replit.app');
+const canonicalURL = new URL(Astro.url.pathname, siteBase);
+const ogImageURL   = new URL(ogImage, siteBase);
 ---
 
 <!doctype html>
@@ -26,17 +28,20 @@ const {
   <!-- Primary SEO -->
   <title>{title}</title>
   <meta name="description" content={description} />
-
-  <!-- TODO: Uncomment and update once canonical domain is confirmed -->
-  <!-- <link rel="canonical" href={canonicalURL} /> -->
+  <link rel="canonical" href={canonicalURL} />
 
   <!-- Open Graph -->
   <meta property="og:type"        content="website" />
   <meta property="og:title"       content={title} />
   <meta property="og:description" content={description} />
-  <meta property="og:image"       content={ogImage} />
-  <!-- TODO: Set og:url once the domain is live -->
-  <!-- <meta property="og:url" content={canonicalURL} /> -->
+  <meta property="og:url"         content={canonicalURL} />
+  <meta property="og:image"       content={ogImageURL} />
+
+  <!-- Twitter / X card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image"       content={ogImageURL} />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
