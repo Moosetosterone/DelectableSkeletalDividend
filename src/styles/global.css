@@ -160,7 +160,7 @@ nav a[role='button'] {
 }
 
 .crest {
-  width: min(220px, 44vw);
+  width: min(280px, 44vw); /* was min(220px, 44vw), keep below 320 */
   margin: 0 auto 18px;
   opacity: 0;
   animation: fadeUp 0.9s ease 0.4s forwards;
