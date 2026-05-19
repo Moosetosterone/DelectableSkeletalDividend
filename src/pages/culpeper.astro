@@ -6,809 +6,737 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout
   title="Culpeper Youth Rugby Football Club"
-  description="Youth rugby for Culpeper and surrounding counties. Pre-K through high school. Tag and tackle rugby in a welcoming, development-focused environment."
+  description="Youth rugby for Culpeper and surrounding counties. Pre-K through High School. Tag and tackle rugby in a welcoming, development-focused environment."
   ogTitle="Culpeper Youth Rugby Football Club"
-  ogDescription="Register for Summer 2026 Rugby. New and returning players welcome. Pre-K through high school."
+  ogDescription="Register for Summer 2026 Rugby. New and returning players welcome. Pre-K through High School."
 >
-  <div class="cy-page">
+  <div class="cy">
 
-    <!-- Nav -->
-    <nav class="cy-nav" aria-label="Culpeper Youth Rugby navigation">
-      <a href="/culpeper" class="cy-brand">
-        <img src="/assets/culpeper/culpeper-logo.png" alt="Culpeper Rugby Football Club crest" class="cy-nav-logo" />
-        <span>Culpeper Youth Rugby</span>
+    <!-- ===================== NAV ===================== -->
+    <nav class="cy-nav" aria-label="Site navigation">
+      <a href="/culpeper" class="cy-nav-brand">
+        <img src="/assets/culpeper/cropped-CYRC-1-white.png" alt="Culpeper Rugby Football Club crest" class="cy-nav-logo" />
+        <span class="cy-nav-wordmark">Culpeper Youth Rugby</span>
       </a>
-      <ul class="cy-nav-links">
+      <button class="cy-nav-toggle" aria-controls="cy-nav-menu" aria-expanded="false" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="cy-nav-links" id="cy-nav-menu">
         <li><a href="#season">Season</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#principles">Principles</a></li>
         <li><a href="#rugby">Rugby 101</a></li>
         <li><a href="#involved">Get Involved</a></li>
-        <li><a href="#contact" class="cy-nav-btn">Register</a></li>
+        <li><a href="#contact" class="cy-nav-cta">Register</a></li>
       </ul>
     </nav>
 
-    <!-- 1. Hero -->
-    <section class="cy-hero" id="main-content">
+    <!-- ===================== HERO ===================== -->
+    <section class="cy-hero" id="top">
       <div class="cy-hero-inner">
-        <img src="/assets/culpeper/culpeper-logo.png" alt="Culpeper Rugby Football Club crest" class="cy-hero-logo" />
-        <p class="cy-eyebrow">Summer 2026 · Now Registering</p>
-        <h1 class="cy-title">Culpeper Youth<br /><em>Rugby Football Club</em></h1>
-        <p class="cy-tagline">
-          New and returning players welcome. Pre-K through high school.
-          No experience required.
+        <img
+          src="/assets/culpeper/cropped-CYRC-1-white.png"
+          alt="Culpeper Rugby Football Club crest"
+          class="cy-hero-crest"
+        />
+        <h1 class="cy-hero-title">Youth Rugby<br />in Culpeper.</h1>
+        <p class="cy-hero-sub">
+          New and returning players welcome.<br class="cy-br" />
+          Rugby for youth athletes from Pre-K through High School.
         </p>
         <div class="cy-hero-actions">
-          <a href="#contact" class="cy-btn-primary">Register for Summer Rugby</a>
-          <a href="#contact" class="cy-btn-secondary">Contact the Club</a>
+          <a href="#contact" class="cy-btn cy-btn--gold">Register for Summer Rugby</a>
+          <a href="#rugby" class="cy-btn cy-btn--outline">Learn About Rugby</a>
         </div>
+      </div>
+      <div class="cy-hero-scroll" aria-hidden="true">
+        <span class="cy-hero-scroll-line"></span>
       </div>
     </section>
 
-    <!-- 2. Current Season -->
-    <section class="cy-section cy-section--alt" id="season">
+    <!-- ===================== CURRENT SEASON ===================== -->
+    <section class="cy-section cy-section--navy-mid" id="season">
       <div class="cy-container">
-        <p class="cy-label">Current Season</p>
-        <h2 class="cy-heading">Summer 2026 <em>Rugby</em></h2>
-        <p class="cy-body">
-          Spring 2026 registered players are already registered for summer — no additional
-          registration needed.
+        <div class="cy-section-label">Current Season</div>
+        <h2 class="cy-section-title">Summer 2026 <em>Rugby</em></h2>
+        <p class="cy-section-body">
+          Spring 2026 registered players are automatically enrolled for summer —
+          no additional registration required.
         </p>
-
         <div class="cy-schedule">
-          <div class="cy-sched-item">
+          <div class="cy-sched-card">
             <div class="cy-sched-date">May 26</div>
-            <div class="cy-sched-label">Practices Begin</div>
+            <div class="cy-sched-event">Practices Begin</div>
           </div>
-          <div class="cy-sched-item">
+          <div class="cy-sched-card cy-sched-card--accent">
             <div class="cy-sched-date">June 6</div>
-            <div class="cy-sched-label">Season Kickoff</div>
+            <div class="cy-sched-event">Season Kickoff</div>
           </div>
-          <div class="cy-sched-item cy-sched-item--note">
+          <div class="cy-sched-card cy-sched-card--dim">
             <div class="cy-sched-date">July 5</div>
-            <div class="cy-sched-label">No Games</div>
+            <div class="cy-sched-event">No Games</div>
           </div>
-          <div class="cy-sched-item cy-sched-item--highlight">
+          <div class="cy-sched-card cy-sched-card--gold">
             <div class="cy-sched-date">July 11</div>
-            <div class="cy-sched-label">Championships</div>
+            <div class="cy-sched-event">Championships</div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 3. About the Club -->
-    <section class="cy-section" id="about">
+    <!-- ===================== ABOUT ===================== -->
+    <section class="cy-section cy-section--light" id="about">
       <div class="cy-container">
-        <p class="cy-label">About the Club</p>
-        <h2 class="cy-heading">Youth rugby for <em>Culpeper</em> and surrounding counties.</h2>
-        <p class="cy-body">
-          Culpeper Youth Rugby Football Club is a community youth rugby programme open to players
-          from Pre-K through high school. The club provides a welcoming, safe, and
-          development-focused environment for young players at every level — from those picking
-          up a rugby ball for the first time to players developing competitive skills.
+        <div class="cy-section-label cy-section-label--dark">About the Club</div>
+        <h2 class="cy-section-title cy-section-title--dark">
+          A rugby club for <em>Culpeper</em><br />and the surrounding region.
+        </h2>
+        <p class="cy-section-body cy-section-body--dark">
+          Culpeper Youth Rugby Football Club is open to players from Culpeper and surrounding
+          counties, from Pre-K through High School. No prior experience is needed at any age group.
+          Our programme is built to welcome beginners and develop players at every stage.
         </p>
 
-        <div class="cy-cards">
-          <div class="cy-card">
-            <div class="cy-card-icon" aria-hidden="true">◈</div>
-            <h3 class="cy-card-title">Pre-K through High School</h3>
-            <p>Age-appropriate formats for every stage. The club grows with your player.</p>
-          </div>
-          <div class="cy-card">
-            <div class="cy-card-icon" aria-hidden="true">◈</div>
-            <h3 class="cy-card-title">Tag to Tackle</h3>
+        <div class="cy-about-grid">
+          <div class="cy-about-item">
+            <div class="cy-about-icon">◈</div>
+            <h3>Tag Rugby</h3>
             <p>
-              Younger age groups play non-contact tag rugby. Tackle formats are introduced
-              progressively for older players, with proper coaching and technique.
+              Younger players learn the game through non-contact tag rugby — defenders pull a
+              belt tag instead of tackling. It's the USA Rugby youth pathway entry point, and it's
+              genuinely fun.
             </p>
           </div>
-          <div class="cy-card">
-            <div class="cy-card-icon" aria-hidden="true">◈</div>
-            <h3 class="cy-card-title">Beginners Welcome</h3>
+          <div class="cy-about-item">
+            <div class="cy-about-icon">◈</div>
+            <h3>Tackle Rugby</h3>
             <p>
-              No experience required at any age group. Coaches work with players from their
-              first session. The programme is designed to teach the game from scratch.
+              Tackle formats are introduced progressively for older age groups with proper coaching,
+              USA Rugby safety guidelines, and technique-first training.
             </p>
           </div>
-          <div class="cy-card">
-            <div class="cy-card-icon" aria-hidden="true">◈</div>
-            <h3 class="cy-card-title">Culpeper &amp; Beyond</h3>
+          <div class="cy-about-item">
+            <div class="cy-about-icon">◈</div>
+            <h3>All Levels Welcome</h3>
             <p>
-              Players from Culpeper and surrounding counties are welcome. The club serves
-              the broader region, not just the town.
+              Whether your player has never seen a rugby match or has seasons of experience, they
+              start at the right level. Coaches work from the ground up.
+            </p>
+          </div>
+          <div class="cy-about-item">
+            <div class="cy-about-icon">◈</div>
+            <h3>Development-First</h3>
+            <p>
+              We prioritise skill, confidence, and character over results. Rugby's team culture
+              naturally reinforces the values we want young athletes to carry off the pitch.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 4. Principles -->
+    <!-- ===================== PRINCIPLES ===================== -->
     <section class="cy-section cy-section--navy-dark" id="principles">
       <div class="cy-container">
-        <p class="cy-label">Club Principles</p>
-        <h2 class="cy-heading">What we <em>stand for.</em></h2>
-
+        <div class="cy-section-label">Club Principles</div>
+        <h2 class="cy-section-title">What we <em>stand for.</em></h2>
         <div class="cy-principles">
           <div class="cy-principle">
-            <div class="cy-principle-num" aria-hidden="true">I</div>
-            <h3 class="cy-principle-title">Unity</h3>
-            <p>
-              Working together towards the same goal — through triumphs and struggles.
-            </p>
+            <div class="cy-principle-roman">I</div>
+            <h3 class="cy-principle-name">Unity</h3>
+            <p>Working together towards the same goal — through triumphs and struggles.</p>
           </div>
           <div class="cy-principle">
-            <div class="cy-principle-num" aria-hidden="true">II</div>
-            <h3 class="cy-principle-title">Courage</h3>
-            <p>
-              Overcoming obstacles through teamwork and preparation.
-            </p>
+            <div class="cy-principle-roman">II</div>
+            <h3 class="cy-principle-name">Courage</h3>
+            <p>Overcoming obstacles through teamwork and preparation.</p>
           </div>
           <div class="cy-principle">
-            <div class="cy-principle-num" aria-hidden="true">III</div>
-            <h3 class="cy-principle-title">Respect</h3>
-            <p>
-              Showing positivity to others on and off the pitch.
-            </p>
+            <div class="cy-principle-roman">III</div>
+            <h3 class="cy-principle-name">Respect</h3>
+            <p>Showing positivity to others on and off the pitch.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 5. Learn About Rugby -->
+    <!-- ===================== RUGBY 101 ===================== -->
     <section class="cy-section" id="rugby">
       <div class="cy-container">
-        <p class="cy-label">For Parents</p>
-        <h2 class="cy-heading">Rugby is more beginner-friendly<br /><em>than you think.</em></h2>
-        <p class="cy-body">
-          Most parents who bring their child to a first practice have never watched a rugby match.
-          That is completely normal — and not a problem. Here is what to know.
+        <div class="cy-section-label">For Parents</div>
+        <h2 class="cy-section-title">
+          Rugby is more beginner-friendly<br /><em>than most parents expect.</em>
+        </h2>
+        <p class="cy-section-body">
+          If your first question is "I don't know anything about rugby — will that be a problem?" —
+          the answer is no. Here is what to know before your player's first session.
         </p>
 
         <div class="cy-rugby-grid">
-          <div class="cy-rugby-item">
+          <div class="cy-rugby-block">
+            <div class="cy-rugby-num">01</div>
             <h3 class="cy-rugby-title">No experience required</h3>
             <p>
-              Rugby coaching starts from zero. Players learn the rules, positions, and skills
-              progressively. A child who has never seen rugby played before will not be out of
-              place at their first session.
+              Rugby coaching starts from zero. Coaches introduce rules, skills, and positions
+              gradually. A player who has never seen a rugby match won't be out of place — that
+              describes most players at their first session.
             </p>
           </div>
-          <div class="cy-rugby-item">
-            <h3 class="cy-rugby-title">Teamwork is central</h3>
+          <div class="cy-rugby-block">
+            <div class="cy-rugby-num">02</div>
+            <h3 class="cy-rugby-title">Teamwork over individual talent</h3>
             <p>
-              Individual talent matters less in rugby than in most sports. Every player on the
-              field has a role. The game rewards communication, decision-making, and looking out
-              for teammates — not just speed or size.
+              Rugby rewards communication, decision-making, and covering teammates — not just
+              speed or size. Players who struggle to stand out in individual-heavy sports often
+              find their best home in rugby.
             </p>
           </div>
-          <div class="cy-rugby-item">
-            <h3 class="cy-rugby-title">Movement and confidence</h3>
+          <div class="cy-rugby-block">
+            <div class="cy-rugby-num">03</div>
+            <h3 class="cy-rugby-title">Builds real confidence</h3>
             <p>
-              Rugby demands the full body — running, catching, spatial awareness, physical
-              contact in age-appropriate formats. Players develop coordination and physical
-              confidence at a pace that suits their age group.
+              The physical demands — running, catching, spatial awareness, contact appropriate
+              to age — build the kind of whole-body confidence that carries over to school and life.
             </p>
           </div>
-          <div class="cy-rugby-item">
-            <h3 class="cy-rugby-title">Respect is enforced</h3>
+          <div class="cy-rugby-block">
+            <div class="cy-rugby-num">04</div>
+            <h3 class="cy-rugby-title">Sportsmanship is enforced</h3>
             <p>
-              Rugby takes respect for opponents, referees, and teammates seriously — not as a
-              stated value but as an enforced expectation at every level. Players learn that the
-              culture of the sport is inseparable from the game itself.
+              Respect for opponents, referees, and teammates isn't a stated value — it's
+              enforced at every level of the sport. Players learn that the culture and the game
+              are inseparable.
             </p>
           </div>
-          <div class="cy-rugby-item">
-            <h3 class="cy-rugby-title">Tag rugby comes first</h3>
+          <div class="cy-rugby-block">
+            <div class="cy-rugby-num">05</div>
+            <h3 class="cy-rugby-title">First practice is low-pressure</h3>
             <p>
-              Younger players begin with non-contact tag rugby. Defenders pull a tag from the
-              ball-carrier's belt instead of tackling. There are no scrums, contact drills, or
-              physical collisions at this level. It is the recognised starting point used by
-              USA Rugby's youth pathway.
+              Expect warm-ups, basic passing drills, a small-sided game or tag play, and a
+              cool-down. Players move a lot, laugh often, and leave tired in a good way. Cleats
+              help — everything else we can work around.
             </p>
           </div>
-          <div class="cy-rugby-item">
-            <h3 class="cy-rugby-title">A sport for every shape</h3>
+          <div class="cy-rugby-block">
+            <div class="cy-rugby-num">06</div>
+            <h3 class="cy-rugby-title">A position for every shape</h3>
             <p>
-              Rugby has a position for every body type. Forwards and backs require different
-              skills, sizes, and strengths. A player who does not fit the mould for another
-              sport often finds their place naturally in rugby.
+              Rugby has forwards and backs — different roles, different skill sets, different
+              body types. A player who doesn't fit the mould for one sport usually finds their
+              place naturally in rugby.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 6. Get Involved -->
-    <section class="cy-section cy-section--alt" id="involved">
+    <!-- ===================== GET INVOLVED ===================== -->
+    <section class="cy-section cy-section--navy-mid" id="involved">
       <div class="cy-container">
-        <p class="cy-label">Get Involved</p>
-        <h2 class="cy-heading">Every role <em>matters.</em></h2>
-        <p class="cy-body">
-          A youth rugby club depends on more than players. If any of these roles fit, we want
-          to hear from you.
+        <div class="cy-section-label">Get Involved</div>
+        <h2 class="cy-section-title">Every role <em>matters.</em></h2>
+        <p class="cy-section-body">
+          A youth rugby club runs on more than players. If any of these roles fit, we want to
+          hear from you.
         </p>
 
         <div class="cy-roles">
           <div class="cy-role">
-            <div class="cy-role-title">Player</div>
-            <p>Youth players, Pre-K through high school. New and returning players welcome.</p>
+            <div class="cy-role-label">Player</div>
+            <p>Youth players, Pre-K through High School. New and returning welcome at every age group.</p>
+            <a href="#contact" class="cy-role-link">Register →</a>
           </div>
           <div class="cy-role">
-            <div class="cy-role-title">Parent</div>
-            <p>Helping manage sessions, coordinate logistics, chaperone, and keep the programme running week to week.</p>
+            <div class="cy-role-label">Parent</div>
+            <p>Help with session logistics, coordination, chaperoning, and keeping the programme running week to week.</p>
+            <a href="#contact" class="cy-role-link">Get in touch →</a>
           </div>
           <div class="cy-role">
-            <div class="cy-role-title">Coach</div>
+            <div class="cy-role-label">Coach</div>
             <p>Rugby experience helpful but not required. Coaches from other sports are welcome. Training and certification support available.</p>
+            <a href="#contact" class="cy-role-link">Get in touch →</a>
           </div>
           <div class="cy-role">
-            <div class="cy-role-title">Volunteer</div>
-            <p>Field setup, event support, administration — every hour contributed helps the programme operate.</p>
+            <div class="cy-role-label">Volunteer</div>
+            <p>Field setup, event support, administration — every hour contributed helps the programme operate smoothly.</p>
+            <a href="#contact" class="cy-role-link">Get in touch →</a>
           </div>
           <div class="cy-role">
-            <div class="cy-role-title">Sponsor</div>
+            <div class="cy-role-label">Sponsor</div>
             <p>Local businesses that support the club help fund kit, equipment, field costs, and player development.</p>
+            <a href="#contact" class="cy-role-link">Get in touch →</a>
           </div>
           <div class="cy-role">
-            <div class="cy-role-title">Supporter</div>
-            <p>Want to follow the club and see it grow? That support matters too. Get in touch and stay connected.</p>
+            <div class="cy-role-label">Supporter</div>
+            <p>Want to follow the club and see it grow? That support matters too. Stay connected with the programme.</p>
+            <a href="#contact" class="cy-role-link">Stay connected →</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 7. Contact / Register -->
-    <section class="cy-section" id="contact">
-      <div class="cy-container cy-container--narrow">
-        <p class="cy-label">Register &amp; Contact</p>
-        <h2 class="cy-heading">Put your name <em>forward.</em></h2>
-        <p class="cy-body">
-          Fill in the form below and the club will be in touch. New and returning players,
-          parents, coaches, and volunteers are all welcome to reach out.
+    <!-- ===================== CONTACT / REGISTER ===================== -->
+    <section class="cy-section cy-section--light" id="contact">
+      <div class="cy-container cy-container--form">
+        <div class="cy-section-label cy-section-label--dark">Register &amp; Contact</div>
+        <h2 class="cy-section-title cy-section-title--dark">
+          Put your name <em>forward.</em>
+        </h2>
+        <p class="cy-section-body cy-section-body--dark">
+          Fill in the form and the club will be in touch. New players, parents, coaches, and
+          volunteers are all welcome to reach out.
         </p>
 
-        <div class="cy-disclaimer" role="note">
-          <strong>Practice build only</strong> — replace with official registration/contact links before launch.
+        <div class="cy-notice" role="note">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <circle cx="8" cy="8" r="7.5" stroke="currentColor"/>
+            <path d="M8 5v4M8 11v.5" stroke="currentColor" stroke-linecap="round"/>
+          </svg>
+          <span>
+            <strong>Practice build only</strong> — replace with official CYRFC registration/contact
+            workflows before launch.
+          </span>
         </div>
 
-        <form class="cy-form" onsubmit="return false;" aria-label="Register or contact form">
+        <form class="cy-form" onsubmit="return false;" aria-label="Register or contact the club">
           <div class="cy-form-row">
             <div class="cy-field">
               <label for="cy-name">Full Name</label>
-              <input type="text" id="cy-name" name="name" placeholder="Your name" autocomplete="name" />
+              <input type="text" id="cy-name" name="name" autocomplete="name" placeholder="Your name" />
             </div>
             <div class="cy-field">
               <label for="cy-email">Email Address</label>
-              <input type="email" id="cy-email" name="email" placeholder="your@email.com" autocomplete="email" />
+              <input type="email" id="cy-email" name="email" autocomplete="email" placeholder="your@email.com" />
             </div>
           </div>
           <div class="cy-field">
             <label for="cy-grade">Player Age / Grade</label>
-            <input type="text" id="cy-grade" name="grade" placeholder="e.g. Age 10, Grade 5 — or 'Parent/Coach/Volunteer'" />
+            <input
+              type="text"
+              id="cy-grade"
+              name="grade"
+              placeholder="e.g. Age 9, Grade 4 — or 'Parent / Coach / Volunteer'"
+            />
           </div>
           <div class="cy-field">
-            <label for="cy-message">Message (optional)</label>
-            <textarea id="cy-message" name="message" rows="4" placeholder="Anything you'd like us to know — questions, availability, role you're interested in…"></textarea>
+            <label for="cy-message">Message <span class="cy-field-optional">(optional)</span></label>
+            <textarea
+              id="cy-message"
+              name="message"
+              rows="4"
+              placeholder="Questions, availability, role you're interested in…"
+            ></textarea>
           </div>
-          <button type="submit" class="cy-btn-primary" disabled aria-disabled="true">
-            Submit — Form not yet active
+          <button type="submit" class="cy-btn cy-btn--gold cy-btn--disabled" disabled aria-disabled="true">
+            Submit — Form Not Yet Active
           </button>
         </form>
       </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ===================== FOOTER ===================== -->
     <footer class="cy-footer">
-      <p>Culpeper Youth Rugby Football Club · Culpeper, Virginia</p>
-      <p class="cy-footer-note">Practice build — not the official CYRFC website.</p>
+      <div class="cy-footer-brand">
+        <img src="/assets/culpeper/cropped-CYRC-1-white.png" alt="" aria-hidden="true" class="cy-footer-logo" />
+        <span>Culpeper Youth Rugby Football Club</span>
+      </div>
+      <p class="cy-footer-region">Culpeper, Virginia &amp; Surrounding Counties</p>
+      <p class="cy-footer-notice">Practice build — not the official CYRFC website.</p>
     </footer>
 
-  </div><!-- /.cy-page -->
+  </div><!-- /.cy -->
+
+  <!-- Mobile nav toggle -->
+  <script>
+    const toggle = document.querySelector('.cy-nav-toggle');
+    const menu   = document.getElementById('cy-nav-menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', () => {
+        const open = menu.classList.toggle('cy-nav-open');
+        toggle.setAttribute('aria-expanded', String(open));
+      });
+      menu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          menu.classList.remove('cy-nav-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  </script>
 </BaseLayout>
 
 <style>
-  /* ============================================================
-     CULPEPER YOUTH RFC — PAGE STYLES
-     Scoped to .cy-page to avoid collision with Spotsylvania RFC.
-     ============================================================ */
+/* =================================================================
+   CULPEPER YOUTH RFC — PAGE STYLES
+   Scoped inside .cy to avoid collision with Spotsylvania RFC.
+   Color tokens:
+     Navy      #0A1F3C
+     Gold      #C8973A
+     White     #FFFFFF
+     LightGray #F4F4F4
+     SkyBlue   #5B9BD5
+     Red       #C0392B
+================================================================= */
 
-  .cy-page {
-    background: var(--navy);
-    color: #e8e4dc;
-    font-family: 'Libre Baskerville', Georgia, serif;
-    min-height: 100vh;
-  }
+/* Reset & base */
+.cy * { box-sizing: border-box; }
+.cy { background: #0A1F3C; color: #fff; font-family: 'Libre Baskerville', Georgia, serif; }
+.cy h1, .cy h2, .cy h3 { font-family: 'Oswald', sans-serif; font-weight: 700; margin: 0; }
+.cy p { margin: 0; }
+.cy a { text-decoration: none; }
 
-  /* --- Nav -------------------------------------------------- */
+/* ---- Nav -------------------------------------------------------- */
+.cy-nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 50;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 28px; height: 64px;
+  background: rgba(10, 31, 60, 0.96);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(200, 151, 58, 0.18);
+}
 
-  .cy-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 20;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 28px;
-    background: rgba(13, 31, 45, 0.92);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(200, 150, 62, 0.2);
-  }
+.cy-nav-brand {
+  display: flex; align-items: center; gap: 10px; color: #fff;
+}
+.cy-nav-logo { height: 38px; width: auto; display: block; }
+.cy-nav-wordmark {
+  font-family: 'Oswald', sans-serif; font-size: 0.78rem; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase; color: #C8973A;
+}
 
-  .cy-brand {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--gold);
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
+.cy-nav-links {
+  display: flex; align-items: center; gap: 4px;
+  list-style: none; margin: 0; padding: 0;
+}
+.cy-nav-links a {
+  font-family: 'Oswald', sans-serif; font-size: 0.7rem; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: rgba(255,255,255,0.7); padding: 6px 10px;
+  transition: color 0.15s;
+}
+.cy-nav-links a:hover { color: #C8973A; }
+.cy-nav-cta {
+  background: #C8973A !important; color: #0A1F3C !important;
+  padding: 8px 18px !important; margin-left: 8px;
+  font-weight: 700 !important;
+}
+.cy-nav-cta:hover { background: #d9a94a !important; }
 
-  .cy-nav-logo {
-    height: 36px;
-    width: auto;
-    display: block;
-  }
+/* Hamburger */
+.cy-nav-toggle {
+  display: none; flex-direction: column; justify-content: center;
+  gap: 5px; width: 36px; height: 36px; padding: 4px;
+  background: transparent; border: none; cursor: pointer;
+}
+.cy-nav-toggle span {
+  display: block; width: 100%; height: 2px;
+  background: #fff; transition: opacity 0.2s;
+}
 
-  .cy-hero-logo {
-    width: min(180px, 36vw);
-    height: auto;
-    margin: 0 auto 28px;
-    display: block;
-    filter: drop-shadow(0 4px 24px rgba(0,0,0,0.5));
-  }
+/* ---- Hero ------------------------------------------------------- */
+.cy-hero {
+  min-height: 100svh; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center; padding: 110px 24px 80px;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(91,155,213,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 50% 100%, rgba(200,151,58,0.07) 0%, transparent 55%),
+    #0A1F3C;
+  position: relative;
+}
+.cy-hero-inner { max-width: 720px; }
+.cy-hero-crest {
+  width: min(200px, 42vw); height: auto;
+  margin: 0 auto 32px;
+  filter: drop-shadow(0 8px 32px rgba(0,0,0,0.55));
+}
+.cy-hero-title {
+  font-size: clamp(2.6rem, 7vw, 5rem); line-height: 1.05;
+  letter-spacing: -0.01em; color: #fff;
+  margin-bottom: 20px;
+}
+.cy-hero-sub {
+  font-size: clamp(1rem, 2.2vw, 1.15rem); line-height: 1.8;
+  color: rgba(255,255,255,0.65); margin-bottom: 40px;
+}
+.cy-br { display: inline; }
+.cy-hero-actions {
+  display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+}
+.cy-hero-scroll {
+  position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
+}
+.cy-hero-scroll-line {
+  display: block; width: 1px; height: 48px;
+  background: linear-gradient(to bottom, rgba(200,151,58,0.6), transparent);
+  margin: 0 auto;
+  animation: cy-scroll-pulse 2.2s ease-in-out infinite;
+}
+@keyframes cy-scroll-pulse {
+  0%, 100% { opacity: 0.3; transform: scaleY(0.8); }
+  50%       { opacity: 1;   transform: scaleY(1); }
+}
 
-  .cy-nav-links {
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+/* ---- Buttons ---------------------------------------------------- */
+.cy-btn {
+  display: inline-block;
+  font-family: 'Oswald', sans-serif; font-weight: 700;
+  font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase;
+  padding: 14px 36px; transition: background 0.15s, color 0.15s, border-color 0.15s;
+  cursor: pointer; border: 2px solid transparent;
+}
+.cy-btn--gold { background: #C8973A; color: #0A1F3C; border-color: #C8973A; }
+.cy-btn--gold:hover { background: #d9a94a; border-color: #d9a94a; }
+.cy-btn--outline { background: transparent; color: #fff; border-color: rgba(255,255,255,0.4); }
+.cy-btn--outline:hover { border-color: #C8973A; color: #C8973A; }
+.cy-btn--disabled { opacity: 0.45; cursor: not-allowed; }
 
-  .cy-nav-links a {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.68rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: rgba(232, 228, 220, 0.8);
-    text-decoration: none;
-    padding: 6px 10px;
-  }
+/* ---- Section base ----------------------------------------------- */
+.cy-section { padding: 100px 24px; }
+.cy-section--navy-dark { background: rgba(0,0,0,0.25); }
+.cy-section--navy-mid  { background: rgba(0,0,0,0.15); }
+.cy-section--light     { background: #F4F4F4; }
 
-  .cy-nav-links a:hover {
-    color: var(--gold);
-  }
+.cy-container { max-width: 1100px; margin: 0 auto; }
+.cy-container--form { max-width: 720px; }
 
-  .cy-nav-btn {
-    background: var(--gold) !important;
-    color: var(--navy) !important;
-    padding: 8px 16px !important;
-    margin-left: 8px;
-  }
+.cy-section-label {
+  font-family: 'Oswald', sans-serif; font-size: 0.65rem; font-weight: 600;
+  letter-spacing: 0.32em; text-transform: uppercase;
+  color: #C8973A; margin-bottom: 16px;
+}
+.cy-section-label--dark { color: #9a7030; }
 
-  /* --- Hero ------------------------------------------------- */
+.cy-section-title {
+  font-size: clamp(1.9rem, 4vw, 3rem); line-height: 1.1;
+  color: #fff; margin-bottom: 20px;
+}
+.cy-section-title em { font-style: italic; color: #C8973A; }
+.cy-section-title--dark { color: #0A1F3C; }
+.cy-section-title--dark em { color: #9a7030; }
 
-  .cy-hero {
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 120px 24px 80px;
-    background:
-      radial-gradient(ellipse at center top, rgba(200, 150, 62, 0.08) 0%, transparent 60%),
-      var(--navy);
-  }
+.cy-section-body {
+  font-size: 1rem; line-height: 1.9; color: rgba(255,255,255,0.6);
+  max-width: 600px; margin-bottom: 56px;
+}
+.cy-section-body--dark { color: rgba(10,31,60,0.65); }
 
-  .cy-hero-inner {
-    max-width: 780px;
-  }
+/* ---- Schedule --------------------------------------------------- */
+.cy-schedule {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
+}
+.cy-sched-card {
+  background: rgba(255,255,255,0.05);
+  border-top: 3px solid rgba(200,151,58,0.25);
+  padding: 32px 24px;
+}
+.cy-sched-card--accent { border-top-color: #5B9BD5; }
+.cy-sched-card--gold   { border-top-color: #C8973A; }
+.cy-sched-card--dim    { opacity: 0.5; }
 
-  .cy-eyebrow {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.68rem;
-    letter-spacing: 0.32em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 20px;
-    border: 1px solid rgba(200, 150, 62, 0.4);
-    display: inline-block;
-    padding: 5px 18px;
-  }
+.cy-sched-date {
+  font-family: 'Oswald', sans-serif; font-size: 1.9rem; font-weight: 700;
+  color: #C8973A; margin-bottom: 8px; letter-spacing: -0.01em;
+}
+.cy-sched-card--accent .cy-sched-date { color: #5B9BD5; }
+.cy-sched-event {
+  font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 500;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: rgba(255,255,255,0.65);
+}
 
-  .cy-title {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: clamp(2.4rem, 6vw, 4.4rem);
-    font-weight: 700;
-    line-height: 1.1;
-    color: #fff;
-    margin-bottom: 24px;
-  }
+/* ---- About grid ------------------------------------------------- */
+.cy-about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2px;
+}
+.cy-about-item {
+  background: #fff; padding: 32px 28px;
+  border-top: 3px solid #C8973A;
+}
+.cy-about-icon {
+  font-size: 1.2rem; color: #C8973A; margin-bottom: 14px;
+}
+.cy-about-item h3 {
+  font-family: 'Oswald', sans-serif; font-size: 0.88rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: #0A1F3C; margin-bottom: 12px;
+}
+.cy-about-item p {
+  font-size: 0.93rem; line-height: 1.8; color: rgba(10,31,60,0.65);
+}
 
-  .cy-title em {
-    font-style: italic;
-    color: var(--gold);
-  }
+/* ---- Principles ------------------------------------------------- */
+.cy-principles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(200,151,58,0.12);
+  border: 1px solid rgba(200,151,58,0.12);
+  margin-top: 8px;
+}
+.cy-principle {
+  background: rgba(10,31,60,0.6);
+  padding: 48px 36px;
+  position: relative;
+}
+.cy-principle-roman {
+  font-family: 'Oswald', sans-serif; font-style: italic;
+  font-size: 3rem; color: #C8973A; opacity: 0.2;
+  line-height: 1; margin-bottom: 16px;
+}
+.cy-principle-name {
+  font-family: 'Oswald', sans-serif; font-size: 1.5rem; font-weight: 700;
+  letter-spacing: 0.04em; color: #C8973A; margin-bottom: 16px;
+}
+.cy-principle p {
+  font-size: 0.97rem; line-height: 1.85; color: rgba(255,255,255,0.65);
+}
 
-  .cy-tagline {
-    font-size: 1.05rem;
-    line-height: 1.8;
-    color: rgba(232, 228, 220, 0.72);
-    max-width: 560px;
-    margin: 0 auto 40px;
-  }
+/* ---- Rugby 101 grid --------------------------------------------- */
+.cy-rugby-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 48px 56px;
+}
+.cy-rugby-num {
+  font-family: 'Oswald', sans-serif; font-size: 0.65rem; font-weight: 700;
+  letter-spacing: 0.2em; color: #5B9BD5; margin-bottom: 10px;
+}
+.cy-rugby-title {
+  font-family: 'Oswald', sans-serif; font-size: 0.88rem; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: #fff; margin-bottom: 12px;
+  padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.cy-rugby-block p {
+  font-size: 0.93rem; line-height: 1.85; color: rgba(255,255,255,0.6);
+}
 
-  .cy-hero-actions {
-    display: flex;
-    gap: 16px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
+/* ---- Get Involved ----------------------------------------------- */
+.cy-roles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 3px;
+}
+.cy-role {
+  background: rgba(255,255,255,0.04);
+  border-top: 3px solid rgba(200,151,58,0.2);
+  padding: 28px 24px;
+  display: flex; flex-direction: column; gap: 10px;
+  transition: background 0.15s;
+}
+.cy-role:hover { background: rgba(255,255,255,0.07); }
+.cy-role-label {
+  font-family: 'Oswald', sans-serif; font-size: 0.78rem; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase; color: #fff;
+}
+.cy-role p { font-size: 0.92rem; line-height: 1.8; color: rgba(255,255,255,0.55); flex: 1; }
+.cy-role-link {
+  font-family: 'Oswald', sans-serif; font-size: 0.68rem; font-weight: 600;
+  letter-spacing: 0.12em; text-transform: uppercase; color: #C8973A;
+  margin-top: 4px; transition: color 0.15s;
+}
+.cy-role-link:hover { color: #d9a94a; }
 
-  /* --- Buttons ---------------------------------------------- */
+/* ---- Contact form ----------------------------------------------- */
+.cy-notice {
+  display: flex; align-items: flex-start; gap: 10px;
+  background: rgba(200,151,58,0.1);
+  border: 1px solid rgba(200,151,58,0.3);
+  border-left: 4px solid #C8973A;
+  padding: 14px 18px; margin-bottom: 36px;
+  font-size: 0.88rem; line-height: 1.55; color: #9a7030;
+}
+.cy-notice svg { flex-shrink: 0; margin-top: 2px; }
+.cy-notice strong { color: #7a5520; }
 
-  .cy-btn-primary {
-    display: inline-block;
-    background: var(--gold);
-    color: var(--navy);
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 14px 36px;
-    border: none;
-    cursor: pointer;
-  }
+.cy-form { display: flex; flex-direction: column; gap: 20px; }
+.cy-form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.cy-field { display: flex; flex-direction: column; gap: 7px; }
+.cy-field label {
+  font-family: 'Oswald', sans-serif; font-size: 0.68rem; font-weight: 600;
+  letter-spacing: 0.14em; text-transform: uppercase; color: rgba(10,31,60,0.65);
+}
+.cy-field-optional { font-weight: 400; opacity: 0.6; }
+.cy-field input,
+.cy-field textarea {
+  background: #fff; border: 1px solid rgba(10,31,60,0.18);
+  padding: 12px 16px; color: #0A1F3C;
+  font-family: 'Libre Baskerville', Georgia, serif; font-size: 0.93rem;
+  width: 100%; transition: border-color 0.15s, box-shadow 0.15s;
+}
+.cy-field input:focus,
+.cy-field textarea:focus {
+  outline: none;
+  border-color: #C8973A;
+  box-shadow: 0 0 0 3px rgba(200,151,58,0.15);
+}
+.cy-field textarea { resize: vertical; }
 
-  .cy-btn-primary:hover {
-    background: #d4a44a;
-  }
+/* ---- Footer ----------------------------------------------------- */
+.cy-footer {
+  background: rgba(0,0,0,0.35);
+  text-align: center; padding: 48px 24px;
+  border-top: 1px solid rgba(200,151,58,0.1);
+}
+.cy-footer-brand {
+  display: flex; align-items: center; justify-content: center;
+  gap: 10px; margin-bottom: 10px;
+}
+.cy-footer-logo { height: 32px; width: auto; opacity: 0.7; }
+.cy-footer-brand span {
+  font-family: 'Oswald', sans-serif; font-size: 0.72rem; font-weight: 600;
+  letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.4);
+}
+.cy-footer-region, .cy-footer-notice {
+  font-family: 'Oswald', sans-serif; font-size: 0.65rem;
+  letter-spacing: 0.14em; text-transform: uppercase;
+}
+.cy-footer-region { color: rgba(255,255,255,0.3); margin-bottom: 4px; }
+.cy-footer-notice { color: rgba(200,151,58,0.35); }
 
-  .cy-btn-primary:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-
-  .cy-btn-secondary {
-    display: inline-block;
-    background: transparent;
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 13px 36px;
-    border: 1px solid rgba(232, 228, 220, 0.4);
-  }
-
-  .cy-btn-secondary:hover {
-    border-color: var(--gold);
-    color: var(--gold);
-  }
-
-  /* --- Sections --------------------------------------------- */
-
-  .cy-section {
-    padding: 96px 24px;
-  }
-
-  .cy-section--alt {
-    background: rgba(255, 255, 255, 0.03);
-  }
-
-  .cy-section--navy-dark {
-    background: rgba(0, 0, 0, 0.25);
-  }
-
-  .cy-container {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  .cy-container--narrow {
-    max-width: 700px;
-  }
-
-  .cy-label {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.66rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 16px;
-  }
-
-  .cy-heading {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: clamp(1.8rem, 4vw, 2.8rem);
-    font-weight: 700;
-    line-height: 1.15;
-    color: #fff;
-    margin-bottom: 20px;
-  }
-
-  .cy-heading em {
-    font-style: italic;
-    color: var(--gold);
-  }
-
-  .cy-body {
-    font-size: 1rem;
-    line-height: 1.85;
-    color: rgba(232, 228, 220, 0.65);
-    max-width: 640px;
-    margin-bottom: 56px;
-  }
-
-  /* --- Schedule --------------------------------------------- */
-
+/* ---- Responsive ------------------------------------------------- */
+@media (max-width: 900px) {
   .cy-schedule {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    gap: 2px;
+    grid-template-columns: repeat(2, 1fr);
   }
-
-  .cy-sched-item {
-    background: rgba(255, 255, 255, 0.04);
-    border-top: 3px solid rgba(200, 150, 62, 0.3);
-    padding: 28px 24px;
-  }
-
-  .cy-sched-item--highlight {
-    border-top-color: var(--gold);
-  }
-
-  .cy-sched-item--note {
-    opacity: 0.55;
-  }
-
-  .cy-sched-date {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 1.6rem;
-    font-weight: 700;
-    font-style: italic;
-    color: var(--gold);
-    margin-bottom: 6px;
-  }
-
-  .cy-sched-label {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.72rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: rgba(232, 228, 220, 0.7);
-  }
-
-  /* --- Cards ------------------------------------------------ */
-
-  .cy-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 24px;
-  }
-
-  .cy-card {
-    border: 1px solid rgba(200, 150, 62, 0.15);
-    padding: 32px 28px;
-  }
-
-  .cy-card-icon {
-    font-size: 1.4rem;
-    color: var(--gold);
-    opacity: 0.6;
-    margin-bottom: 16px;
-  }
-
-  .cy-card-title {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.82rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 12px;
-  }
-
-  .cy-card p {
-    font-size: 0.93rem;
-    line-height: 1.8;
-    color: rgba(232, 228, 220, 0.6);
-    margin: 0;
-  }
-
-  /* --- Principles ------------------------------------------- */
-
   .cy-principles {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 48px;
-    margin-top: 8px;
+    grid-template-columns: 1fr;
   }
+}
 
-  .cy-principle-num {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 2rem;
-    font-style: italic;
-    color: var(--gold);
-    opacity: 0.4;
-    margin-bottom: 12px;
+@media (max-width: 700px) {
+  .cy-nav { padding: 0 20px; }
+  .cy-nav-toggle { display: flex; }
+  .cy-nav-links {
+    display: none;
+    position: absolute; top: 64px; left: 0; right: 0;
+    flex-direction: column; align-items: stretch;
+    background: rgba(10,31,60,0.98);
+    border-top: 1px solid rgba(200,151,58,0.15);
+    padding: 12px 0;
   }
+  .cy-nav-links.cy-nav-open { display: flex; }
+  .cy-nav-links li { width: 100%; }
+  .cy-nav-links a { display: block; padding: 12px 24px; font-size: 0.78rem; }
+  .cy-nav-cta { margin: 8px 24px 4px; padding: 12px 18px !important; text-align: center; }
 
-  .cy-principle-title {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--gold);
-    margin-bottom: 14px;
-  }
+  .cy-hero { padding-top: 90px; }
+  .cy-hero-crest { width: min(140px, 50vw); margin-bottom: 24px; }
+  .cy-br { display: none; }
 
-  .cy-principle p {
-    font-size: 0.97rem;
-    line-height: 1.8;
-    color: rgba(232, 228, 220, 0.65);
-    margin: 0;
-  }
+  .cy-section { padding: 72px 20px; }
 
-  /* --- Rugby grid ------------------------------------------- */
+  .cy-schedule { grid-template-columns: repeat(2, 1fr); }
+  .cy-form-row { grid-template-columns: 1fr; }
+}
 
-  .cy-rugby-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px 60px;
-  }
-
-  .cy-rugby-title {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 12px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(200, 150, 62, 0.2);
-  }
-
-  .cy-rugby-item p {
-    font-size: 0.93rem;
-    line-height: 1.85;
-    color: rgba(232, 228, 220, 0.6);
-    margin: 0;
-  }
-
-  /* --- Roles ------------------------------------------------ */
-
-  .cy-roles {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 2px;
-  }
-
-  .cy-role {
-    background: rgba(255, 255, 255, 0.04);
-    padding: 28px 24px;
-    border-top: 3px solid rgba(200, 150, 62, 0.25);
-  }
-
-  .cy-role-title {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 12px;
-  }
-
-  .cy-role p {
-    font-size: 0.92rem;
-    line-height: 1.8;
-    color: rgba(232, 228, 220, 0.58);
-    margin: 0;
-  }
-
-  /* --- Form ------------------------------------------------- */
-
-  .cy-disclaimer {
-    background: rgba(200, 150, 62, 0.1);
-    border: 1px solid rgba(200, 150, 62, 0.35);
-    border-left: 4px solid var(--gold);
-    padding: 14px 20px;
-    font-size: 0.88rem;
-    color: var(--gold);
-    margin-bottom: 40px;
-    line-height: 1.5;
-  }
-
-  .cy-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .cy-form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  .cy-field {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .cy-field label {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.68rem;
-    font-weight: 600;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: rgba(232, 228, 220, 0.7);
-  }
-
-  .cy-field input,
-  .cy-field textarea {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(232, 228, 220, 0.15);
-    padding: 12px 16px;
-    color: #fff;
-    font-family: 'Libre Baskerville', Georgia, serif;
-    font-size: 0.93rem;
-    width: 100%;
-  }
-
-  .cy-field input:focus,
-  .cy-field textarea:focus {
-    outline: 2px solid var(--gold);
-    outline-offset: 2px;
-    border-color: var(--gold);
-  }
-
-  .cy-field textarea {
-    resize: vertical;
-  }
-
-  /* --- Footer ----------------------------------------------- */
-
-  .cy-footer {
-    text-align: center;
-    padding: 40px 24px;
-    border-top: 1px solid rgba(200, 150, 62, 0.1);
-  }
-
-  .cy-footer p {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.68rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: rgba(232, 228, 220, 0.35);
-    margin: 4px 0;
-  }
-
-  .cy-footer-note {
-    color: rgba(200, 150, 62, 0.4) !important;
-  }
-
-  /* --- Responsive ------------------------------------------- */
-
-  @media (max-width: 760px) {
-    .cy-nav-links li:not(:last-child) {
-      display: none;
-    }
-
-    .cy-form-row {
-      grid-template-columns: 1fr;
-    }
-  }
+@media (max-width: 400px) {
+  .cy-schedule { grid-template-columns: 1fr; }
+  .cy-nav-wordmark { display: none; }
+}
 </style>

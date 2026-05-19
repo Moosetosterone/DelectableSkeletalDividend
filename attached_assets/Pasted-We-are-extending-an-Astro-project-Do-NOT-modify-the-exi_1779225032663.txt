@@ -1,0 +1,134 @@
+We are extending an Astro project.
+
+Do NOT modify the existing Spotsylvania RFC homepage.
+
+Create a standalone practice implementation for Culpeper Youth Rugby at:
+
+src/pages/culpeper.astro
+
+Reuse existing layouts/components/styles when reasonable.
+
+Use the logo asset:
+
+/assets/culpeper/cropped-CYRC-1-white.png
+
+SITE GOAL:
+Create a polished one-page youth rugby club homepage that feels credible, warm, and conversion-focused.
+
+VISUAL SYSTEM:
+
+Primary colors:
+Navy #0A1F3C
+Gold #C8973A
+White #FFFFFF
+Light Gray #F4F4F4
+
+Accent colors:
+Sky Blue #5B9BD5
+Red #C0392B
+
+Use navy as dominant background.
+Use white typography.
+Use gold for buttons and section accents.
+Use sky blue sparingly as supportive highlight color.
+Do NOT recolor or alter the logo.
+
+TYPOGRAPHY:
+Use Oswald-style headings.
+Clean sans-serif body copy.
+Bold navigation.
+
+PAGE STRUCTURE:
+
+1. HERO
+- Large crest logo
+- Headline:
+  "Youth Rugby in Culpeper."
+- Supporting text:
+  "New and returning players welcome. Rugby for youth athletes from Pre-K through High School."
+- Primary CTA:
+  Register for Summer Rugby
+- Secondary CTA:
+  Learn About Rugby
+
+2. CURRENT SEASON
+Summer 2026 Rugby
+
+Include:
+Practices begin May 26
+Kickoff June 6
+No games July 5
+Championship July 11
+
+Mention:
+Spring players are already registered for summer.
+
+3. ABOUT
+
+Explain:
+- Culpeper and surrounding counties
+- beginner-friendly
+- tag + tackle pathways
+- fun, safe, developmental environment
+
+4. PRINCIPLES
+
+Create a three-column section using EXACT wording:
+
+UNITY
+Working together towards the same goal — through triumphs and struggles.
+
+COURAGE
+Overcoming obstacles through teamwork and preparation.
+
+RESPECT
+Showing positivity to others on and off the pitch.
+
+5. LEARN ABOUT RUGBY
+
+Write for skeptical parents.
+
+Explain:
+- beginner friendly
+- teamwork
+- confidence
+- movement
+- sportsmanship
+- what first practice feels like
+
+6. GET INVOLVED
+
+Cards for:
+Player
+Parent
+Coach
+Volunteer
+Sponsor
+Supporter
+
+7. CONTACT / REGISTER
+
+Create a simple placeholder form.
+
+Fields:
+Name
+Email
+Age / Grade
+Message
+
+Add visible notice:
+
+"Practice build only — replace with official CYRFC registration/contact workflows before launch."
+
+STYLE REQUIREMENTS:
+
+- strong mobile responsiveness
+- modern but community-oriented
+- credible youth sports feel
+- no CMS
+- no new packages
+- preserve Astro conventions
+
+After implementation:
+
+Run npm run build and resolve all errors.
