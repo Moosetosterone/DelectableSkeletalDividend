@@ -4,28 +4,19 @@ import sharp from 'sharp';
 import { readFileSync } from 'fs';
 import path from 'path';
 
-async function loadFont(family: string, weight: number, italic: boolean): Promise<ArrayBuffer> {
-  const params = italic
-    ? `${family.replace(/ /g, '+')}:ital,wght@1,${weight}`
-    : `${family.replace(/ /g, '+')}:wght@${weight}`;
-  const css = await fetch(`https://fonts.googleapis.com/css2?family=${params}`, {
-    headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0)' },
-  }).then((r) => r.text());
-  const url = css.match(/url\(([^)]+\.woff2)\)/)?.[1];
-  if (!url) throw new Error(`Font not found: ${family}`);
-  return fetch(url).then((r) => r.arrayBuffer());
-}
-
 export const GET: APIRoute = async () => {
+  const root = process.cwd();
   const crestBuffer = readFileSync(
-    path.join(process.cwd(), 'public/assets/spotsylvania-rfc-crest.png')
+    path.join(root, 'public/assets/spotsylvania-rfc-crest.png')
   );
   const crestSrc = `data:image/png;base64,${crestBuffer.toString('base64')}`;
 
-  const [fontNormal, fontItalic] = await Promise.all([
-    loadFont('Playfair Display', 700, false),
-    loadFont('Playfair Display', 700, true),
-  ]);
+  const fontNormal = readFileSync(
+    path.join(root, 'public/fonts/playfair-display-700.ttf')
+  ).buffer as ArrayBuffer;
+  const fontItalic = readFileSync(
+    path.join(root, 'public/fonts/playfair-display-700-italic.ttf')
+  ).buffer as ArrayBuffer;
 
   const svg = await satori(
     {

@@ -1,0 +1,37 @@
+~/workspace$ npm run build
+
+> spotsylvania-rfc@1.0.0 build
+> astro build
+
+19:13:48 [types] Generated 33ms
+19:13:48 [build] output: "static"
+19:13:48 [build] mode: "static"
+19:13:48 [build] directory: /home/runner/workspace/dist/
+19:13:48 [build] Collecting build info...
+19:13:48 [build] ✓ Completed in 53ms.
+19:13:48 [build] Building static entrypoints...
+19:13:49 [WARN] [vite] "matchHostname", "matchPathname", "matchPort" and "matchProtocol" are imported from external module "@astrojs/internal-helpers/remote" but never used in "node_modules/astro/dist/assets/utils/index.js".
+19:13:49 [vite] ✓ built in 885ms
+19:13:49 [vite] ✓ built in 13ms
+19:13:49 [build] Rearranging server assets...
+
+ generating static routes 
+19:13:49   ├─ /og-image.png19:13:49 [ERROR] Error: Font not found: Playfair Display
+    at loadFont (file:///home/runner/workspace/dist/.prerender/chunks/og-image_D8BwtPCo.mjs:12:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Promise.all (index 0)
+    at async Module.GET (file:///home/runner/workspace/dist/.prerender/chunks/og-image_D8BwtPCo.mjs:20:36)
+    at async renderEndpoint (file:///home/runner/workspace/dist/.prerender/chunks/prerender_w6dlp_yC.mjs:2502:18)
+    at async lastNext (file:///home/runner/workspace/dist/.prerender/chunks/prerender_w6dlp_yC.mjs:7883:23)
+    at async callMiddleware (file:///home/runner/workspace/dist/.prerender/chunks/prerender_w6dlp_yC.mjs:5338:10)
+    at async RenderContext.render (file:///home/runner/workspace/dist/.prerender/chunks/prerender_w6dlp_yC.mjs:7930:73)
+    at async BuildApp.render (file:///home/runner/workspace/dist/.prerender/chunks/prerender_w6dlp_yC.mjs:8829:20)
+    at async generatePathWithPrerenderer (file:///home/runner/workspace/node_modules/astro/dist/core/build/generate.js:251:16)
+19:13:49 [ERROR] [build] Caught error rendering /og-image.png: Error: Font not found: Playfair Display
+Font not found: Playfair Display
+  Stack trace:
+    at loadFont (file:///home/runner/workspace/dist/.prerender/chunks/og-image_D8BwtPCo.mjs:12:19)
+    at async Promise.all (index 0)
+    at async renderEndpoint (file:///home/runner/workspace/dist/.prerender/chunks/prerender_w6dlp_yC.mjs:2502:18)
+    at async callMiddleware (file:///home/runner/workspace/dist/.prerender/chunks/prerender_w6dlp_yC.mjs:5338:10)
+    at async BuildApp.render (file:///home/runner/workspace/dist/.prerender/chunks/prerender_w6dlp_yC.mjs:8829:20)
