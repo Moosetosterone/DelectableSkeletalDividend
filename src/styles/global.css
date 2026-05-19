@@ -139,7 +139,7 @@ nav a[role='button'] {
   text-align: center;
   padding: 120px 24px 72px;
   position: relative;
-  background-color: var(--navy);
+  background-color: var(--green);
   background-image:
     radial-gradient(circle at 50% 23%, rgba(184, 154, 74, 0.14), transparent 30rem),
     repeating-linear-gradient(
@@ -381,7 +381,7 @@ button.btn-primary {
 /* --- Quote stripe ----------------------------------------- */
 
 .stripe {
-  background: var(--navy);
+  background: var(--green);
   padding: 80px 24px;
   text-align: center;
 }
@@ -579,7 +579,7 @@ textarea {
 
 footer.container {
   max-width: none;
-  background: var(--navy);
+  background: var(--green);
   padding: 40px 24px;
   text-align: center;
   border-top: 1px solid rgba(184, 154, 74, 0.15);
