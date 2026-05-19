@@ -2,7 +2,6 @@ import type { APIRoute } from 'astro';
 import satori from 'satori';
 import sharp from 'sharp';
 import { readFileSync } from 'fs';
-import { fileURLToPath } from 'url';
 import path from 'path';
 
 async function loadFont(family: string, weight: number, italic: boolean): Promise<ArrayBuffer> {
@@ -18,9 +17,8 @@ async function loadFont(family: string, weight: number, italic: boolean): Promis
 }
 
 export const GET: APIRoute = async () => {
-  const __dirname = path.dirname(fileURLToPath(import.meta.url));
   const crestBuffer = readFileSync(
-    path.join(__dirname, '../../public/assets/spotsylvania-rfc-crest.png')
+    path.join(process.cwd(), 'public/assets/spotsylvania-rfc-crest.png')
   );
   const crestSrc = `data:image/png;base64,${crestBuffer.toString('base64')}`;
 
