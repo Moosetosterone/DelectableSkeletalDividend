@@ -23,6 +23,9 @@
   --pico-primary-border: #B89A4A;
   --pico-primary-inverse: #1E3D2E;
   --pico-font-family: 'Libre Baskerville', Georgia, serif;
+
+  --section-pad-v: 110px;
+  --section-pad-v-sm: 64px;
 }
 
 /* --- Global reset / base ---------------------------------- */
@@ -295,7 +298,7 @@ button.btn-primary {
 /* --- Shared section styles -------------------------------- */
 
 .section {
-  padding: 110px 24px;
+  padding: var(--section-pad-v) 24px;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -382,7 +385,7 @@ button.btn-primary {
 
 .stripe {
   background: var(--green);
-  padding: 80px 24px;
+  padding: var(--section-pad-v) 24px;
   text-align: center;
 }
 
@@ -435,7 +438,7 @@ button.btn-primary {
 
 .form-section {
   background: var(--green);
-  padding: 110px 24px;
+  padding: var(--section-pad-v) 24px;
   position: relative;
   overflow: hidden;
 }
@@ -675,13 +678,13 @@ footer a:hover {
   }
 
   .section {
-    padding: 64px 20px;
+    padding: var(--section-pad-v-sm) 20px;
   }
   .stripe {
-    padding: 56px 20px;
+    padding: var(--section-pad-v-sm) 20px;
   }
   .form-section {
-    padding: 72px 20px;
+    padding: var(--section-pad-v-sm) 20px;
   }
 
   .form-row,
