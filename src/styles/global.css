@@ -128,7 +128,6 @@ nav a[role='button'] {
   position: relative;
   background-color: var(--green);
   background-image:
-    radial-gradient(circle at 50% 23%, rgba(184, 154, 74, 0.14), transparent 30rem),
     repeating-linear-gradient(
       0deg,
       transparent,
