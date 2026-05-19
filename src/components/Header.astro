@@ -1,7 +1,8 @@
 ---
 // Header.astro — fixed top navigation bar
 const path = Astro.url.pathname;
-const isHome = path === '/';
+const is = (stem: string) =>
+  stem === '/' ? path === '/' : path.startsWith(stem);
 ---
 
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -11,8 +12,11 @@ const isHome = path === '/';
     <li><strong>Spotsylvania RFC</strong></li>
   </ul>
   <ul>
-    <li><a href="/#youth" class={isHome ? 'nav-active' : undefined}>Youth Tag Rugby</a></li>
-    <li><a href="/#vision" class={isHome ? 'nav-active' : undefined}>Vision</a></li>
+    <li><a href="/" class={is('/') ? 'nav-active' : undefined}>Home</a></li>
+    <li><a href="/about" class={is('/about') ? 'nav-active' : undefined}>About</a></li>
+    <li><a href="/rugby-101" class={is('/rugby-101') ? 'nav-active' : undefined}>Rugby 101</a></li>
+    <li><a href="/get-involved" class={is('/get-involved') ? 'nav-active' : undefined}>Get Involved</a></li>
+    <li><a href="/news" class={is('/news') ? 'nav-active' : undefined}>News</a></li>
     <li><a href="/#interest" role="button">Join the Founding List</a></li>
   </ul>
 </nav>
@@ -22,8 +26,8 @@ const isHome = path === '/';
     color: var(--gold);
   }
 
-  @media (max-width: 760px) {
-    nav ul:last-child li:nth-child(-n + 2) {
+  @media (max-width: 960px) {
+    nav ul:last-child li:nth-child(-n + 5) {
       display: none;
     }
   }

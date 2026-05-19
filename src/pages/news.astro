@@ -1,0 +1,136 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="News — Spotsylvania RFC"
+  description="Updates, milestones, and announcements from Spotsylvania Rugby Football Club as the founding effort develops."
+  ogTitle="News — Spotsylvania RFC"
+  ogDescription="Founding updates, interest meeting announcements, and launch milestones from Spotsylvania RFC."
+>
+  <Header />
+
+  <main id="main-content">
+
+    <div class="ph-outer">
+      <div class="ph-inner">
+        <p class="section-label">News &amp; Updates</p>
+        <h1 class="section-title">Updates <em>coming.</em></h1>
+        <p class="section-body">
+          This page will carry founding updates, interest meeting announcements, session dates,
+          and launch milestones as the club develops. Check back as things progress.
+        </p>
+      </div>
+    </div>
+
+    <section class="section">
+      <p class="section-label">Currently</p>
+      <h2 class="section-title">Founding interest <em>in progress.</em></h2>
+      <p class="section-body">
+        Spotsylvania RFC is in the founding interest phase. The focus right now is building the
+        founding list — a direct record of players, parents, coaches, volunteers, referees,
+        sponsors, and supporters who want to see a rugby club established here.
+      </p>
+
+      <div class="update-card">
+        <div class="update-date">Est. 2026</div>
+        <h3 class="update-title">Founding interest campaign open</h3>
+        <p class="update-body">
+          The founding list is open. If you are a prospective player, parent, coach, volunteer,
+          school contact, sponsor, or supporter, your name on the list helps determine whether
+          there is enough interest to schedule the first interest meeting and begin organising
+          a first season.
+        </p>
+        <a href="/#interest" class="btn-secondary">Join the Founding List</a>
+      </div>
+
+      <div class="coming-soon">
+        <p class="section-label" style="margin-bottom: 16px;">What to expect here</p>
+        <ul class="update-list">
+          <li>Interest meeting announcements — date, location, and agenda</li>
+          <li>Founding list milestones as interest builds</li>
+          <li>First session dates once logistics are confirmed</li>
+          <li>Coach and volunteer recruitment updates</li>
+          <li>Sponsorship and partnership announcements</li>
+          <li>Club registration progress with USA Rugby</li>
+        </ul>
+      </div>
+
+    </section>
+
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .ph-outer {
+    background: var(--green);
+    padding: 0 24px;
+  }
+
+  .ph-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: calc(var(--section-pad-v) + 52px) 0 var(--section-pad-v);
+  }
+
+  .ph-outer .section-label { color: var(--gold); }
+  .ph-outer .section-title { color: var(--cream); }
+  .ph-outer .section-title em { color: var(--gold); }
+  .ph-outer .section-body { color: rgba(246, 242, 230, 0.75); margin-bottom: 0; }
+
+  .update-card {
+    border: 1px solid rgba(30, 61, 46, 0.15);
+    border-top: 4px solid var(--gold);
+    padding: 36px;
+    max-width: 680px;
+    margin-bottom: 64px;
+  }
+
+  .update-date {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+
+  .update-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 16px;
+  }
+
+  .update-body {
+    font-size: 0.97rem;
+    line-height: 1.85;
+    color: var(--muted);
+    margin-bottom: 28px;
+  }
+
+  .coming-soon {
+    max-width: 680px;
+    padding: 36px;
+    background: var(--light);
+  }
+
+  .update-list {
+    margin: 0;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .update-list li {
+    font-size: 0.97rem;
+    line-height: 1.7;
+    color: var(--muted);
+  }
+</style>

@@ -1,0 +1,167 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import RegistrationForm from '../components/RegistrationForm.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<BaseLayout
+  title="Get Involved — Spotsylvania RFC"
+  description="Find your role at Spotsylvania RFC. Players, parents, coaches, volunteers, referees, sponsors, and supporters are all needed to build this club."
+  ogTitle="Get Involved — Spotsylvania RFC"
+  ogDescription="Every role matters. Join the founding list and tell us how you want to help build Spotsylvania RFC."
+>
+  <Header />
+
+  <main id="main-content">
+
+    <div class="ph-outer">
+      <div class="ph-inner">
+        <p class="section-label">Get Involved</p>
+        <h1 class="section-title">Every role <em>matters.</em></h1>
+        <p class="section-body">
+          A rugby club is not built by players alone. It takes coaches, parents, volunteers,
+          referees, sponsors, and supporters who are willing to step forward before the club
+          exists. If any of that sounds like you, your name belongs on the founding list.
+        </p>
+      </div>
+    </div>
+
+    <section class="section">
+      <p class="section-label">Roles</p>
+      <h2 class="section-title">How you can <em>help.</em></h2>
+      <p class="section-body">
+        No commitment is required at this stage. Joining the founding list tells us who you are
+        and how you might like to be involved. That information shapes what the first season looks
+        like and who we need to reach next.
+      </p>
+
+      <div class="role-grid">
+
+        <div class="role-card">
+          <div class="role-title">Player</div>
+          <p>
+            Youth or adult. No experience required. The founding list is the first step — sessions
+            and formats will be confirmed once we have a clear picture of numbers, ages, and
+            interest level.
+          </p>
+        </div>
+
+        <div class="role-card">
+          <div class="role-title">Parent &amp; Family</div>
+          <p>
+            Parents are essential to a youth programme. Managing, coordinating, chaperoning,
+            driving, and showing up consistently — those contributions are what keep a youth club
+            running. Rugby experience is not required.
+          </p>
+        </div>
+
+        <div class="role-card">
+          <div class="role-title">Coach</div>
+          <p>
+            We need coaches at all levels. Rugby coaching experience is welcome but not
+            required — coaches from other sports bring real skills. Training and certification
+            support will be available. What matters most is willingness and patience.
+          </p>
+        </div>
+
+        <div class="role-card">
+          <div class="role-title">Volunteer</div>
+          <p>
+            Field setup, event coordination, communications, administration — there is no shortage
+            of work in a founding club. Volunteers make everything possible. An hour here and
+            there adds up significantly.
+          </p>
+        </div>
+
+        <div class="role-card">
+          <div class="role-title">Referee</div>
+          <p>
+            Referees are one of the hardest things for a new club to develop. If you are
+            interested in officiating, USA Rugby offers referee development courses. We would like
+            to know you now and support you through the process.
+          </p>
+        </div>
+
+        <div class="role-card">
+          <div class="role-title">Sponsor</div>
+          <p>
+            Local businesses that support the club at founding help determine what the first
+            season looks like. Kit, field costs, equipment, and insurance all require funding.
+            Sponsorship discussions are welcome at any stage of this process.
+          </p>
+        </div>
+
+        <div class="role-card">
+          <div class="role-title">School Contact</div>
+          <p>
+            Teachers, administrators, and PE staff who can open doors to school sessions, fields,
+            and students are among the most valuable contacts a founding programme can have. If
+            you work in education in Spotsylvania, we want to hear from you.
+          </p>
+        </div>
+
+        <div class="role-card">
+          <div class="role-title">Supporter</div>
+          <p>
+            Not ready to commit to a specific role but want to see this happen? That counts. Put
+            your name down. Knowing that people are watching and want this to work is meaningful
+            and we will keep you informed as the club develops.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <RegistrationForm />
+  <Footer />
+</BaseLayout>
+
+<style>
+  .ph-outer {
+    background: var(--green);
+    padding: 0 24px;
+  }
+
+  .ph-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: calc(var(--section-pad-v) + 52px) 0 var(--section-pad-v);
+  }
+
+  .ph-outer .section-label { color: var(--gold); }
+  .ph-outer .section-title { color: var(--cream); }
+  .ph-outer .section-title em { color: var(--gold); }
+  .ph-outer .section-body { color: rgba(246, 242, 230, 0.75); margin-bottom: 0; }
+
+  .role-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+    margin-top: 48px;
+  }
+
+  .role-card {
+    border-top: 3px solid var(--gold);
+    padding-top: 20px;
+  }
+
+  .role-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin-bottom: 12px;
+  }
+
+  .role-card p {
+    font-size: 0.95rem;
+    line-height: 1.85;
+    color: var(--muted);
+    margin: 0;
+  }
+</style>
