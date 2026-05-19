@@ -10,8 +10,8 @@
 
 :root {
   --navy: #0d1f2d;
-  --green: #1e3d2e;
-  --gold: #b89a4a;
+  --green: #1a3a2a;
+  --gold: #c8963e;
   --cream: #f6f2e6;
   --light: #ede8d8;
   /* reserved — kit section accent */
@@ -19,10 +19,10 @@
   --text: #1c1208;
   --muted: #6b5e4a;
 
-  --pico-primary: #b89a4a;
-  --pico-primary-background: #b89a4a;
-  --pico-primary-border: #b89a4a;
-  --pico-primary-inverse: #1e3d2e;
+  --pico-primary: #c8963e;
+  --pico-primary-background: #c8963e;
+  --pico-primary-border: #c8963e;
+  --pico-primary-inverse: #1a3a2a;
   --pico-font-family: 'Libre Baskerville', Georgia, serif;
 
   --section-pad-v: 110px;
