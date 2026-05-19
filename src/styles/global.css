@@ -496,7 +496,7 @@ button.btn-primary {
   gap: 8px;
 }
 
-label {
+.form-section label {
   font-family: 'Oswald', sans-serif;
   font-size: 0.68rem;
   letter-spacing: 0.2em;
@@ -504,9 +504,9 @@ label {
   color: rgba(246, 242, 230, 0.55);
 }
 
-input,
-select,
-textarea {
+.form-section input,
+.form-section select,
+.form-section textarea {
   background: rgba(255, 255, 255, 0.07);
   border: 1px solid rgba(184, 154, 74, 0.25);
   color: var(--cream);
@@ -518,37 +518,37 @@ textarea {
   margin: 0;
 }
 
-input::placeholder,
-textarea::placeholder {
+.form-section input::placeholder,
+.form-section textarea::placeholder {
   color: rgba(246, 242, 230, 0.28);
 }
 
-input:focus,
-select:focus,
-textarea:focus {
+.form-section input:focus,
+.form-section select:focus,
+.form-section textarea:focus {
   border-color: var(--gold);
   background: rgba(255, 255, 255, 0.1);
   box-shadow: none;
 }
 
-select option {
+.form-section select option {
   background: var(--green);
   color: var(--cream);
 }
 
-textarea {
+.form-section textarea {
   resize: vertical;
   min-height: 100px;
 }
 
-.field-hint {
+.form-section .field-hint {
   font-size: 0.8rem;
   color: rgba(246, 242, 230, 0.4);
   line-height: 1.5;
   margin-top: 2px;
 }
 
-.form-error {
+.form-section .form-error {
   color: #f28b82;
   font-size: 0.88rem;
   line-height: 1.55;
@@ -556,14 +556,14 @@ textarea {
   margin-top: 4px;
 }
 
-.microcopy {
+.form-section .microcopy {
   margin-top: 16px;
   color: rgba(246, 242, 230, 0.48);
   font-size: 0.84rem;
   line-height: 1.65;
 }
 
-.success-msg {
+.form-section .success-msg {
   display: none;
   background: rgba(184, 154, 74, 0.15);
   border: 1px solid var(--gold);
@@ -574,7 +574,7 @@ textarea {
   margin-top: 16px;
 }
 
-.success-msg strong {
+.form-section .success-msg strong {
   color: var(--gold);
 }
 
