@@ -14,7 +14,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     <!-- Nav -->
     <nav class="cy-nav" aria-label="Culpeper Youth Rugby navigation">
-      <a href="/culpeper" class="cy-brand">Culpeper Youth Rugby</a>
+      <a href="/culpeper" class="cy-brand">
+        <img src="/assets/culpeper-logo.png" alt="Culpeper Rugby Football Club crest" class="cy-nav-logo" />
+        <span>Culpeper Youth Rugby</span>
+      </a>
       <ul class="cy-nav-links">
         <li><a href="#season">Season</a></li>
         <li><a href="#about">About</a></li>
@@ -27,6 +30,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <!-- 1. Hero -->
     <section class="cy-hero" id="main-content">
       <div class="cy-hero-inner">
+        <img src="/assets/culpeper-logo.png" alt="Culpeper Rugby Football Club crest" class="cy-hero-logo" />
         <p class="cy-eyebrow">Summer 2026 · Now Registering</p>
         <h1 class="cy-title">Culpeper Youth<br /><em>Rugby Football Club</em></h1>
         <p class="cy-tagline">
@@ -339,6 +343,23 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     text-transform: uppercase;
     color: var(--gold);
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cy-nav-logo {
+    height: 36px;
+    width: auto;
+    display: block;
+  }
+
+  .cy-hero-logo {
+    width: min(180px, 36vw);
+    height: auto;
+    margin: 0 auto 28px;
+    display: block;
+    filter: drop-shadow(0 4px 24px rgba(0,0,0,0.5));
   }
 
   .cy-nav-links {
