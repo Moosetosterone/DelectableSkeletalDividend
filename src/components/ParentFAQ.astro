@@ -1,0 +1,65 @@
+---
+// ParentFAQ.astro — short parent-facing FAQ, landing page placement
+---
+
+<section class="section" id="faq" aria-labelledby="faq-heading">
+  <p class="section-label">For Parents</p>
+  <h2 class="section-title" id="faq-heading">Questions we hear first.</h2>
+
+  <dl class="faq-list">
+    <div class="faq-item">
+      <dt>Is this tackle rugby?</dt>
+      <dd>No. The first youth offering is non-contact tag rugby. There will be no tackling, scrums, rucks, mauls, or contact drills.</dd>
+    </div>
+    <div class="faq-item">
+      <dt>What is tag rugby?</dt>
+      <dd>Tag rugby is a non-contact version of rugby. Players wear tags or flags, and defenders stop play by pulling a tag instead of tackling.</dd>
+    </div>
+    <div class="faq-item">
+      <dt>What age groups is this for?</dt>
+      <dd>The first focus is elementary and middle school students. Exact age and grade groups will depend on interest, volunteer support, field access, and registration requirements.</dd>
+    </div>
+    <div class="faq-item">
+      <dt>Does my child need experience?</dt>
+      <dd>No. The program is designed for beginners.</dd>
+    </div>
+    <div class="faq-item">
+      <dt>Do parents need to volunteer?</dt>
+      <dd>Parent help will be important. No rugby experience is required for many volunteer roles.</dd>
+    </div>
+  </dl>
+</section>
+
+<style>
+  .faq-list {
+    max-width: 720px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .faq-item {
+    border-top: 1px solid rgba(30, 61, 46, 0.12);
+    padding: 28px 0;
+  }
+
+  .faq-item:last-child {
+    border-bottom: 1px solid rgba(30, 61, 46, 0.12);
+  }
+
+  dt {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--navy);
+    margin-bottom: 10px;
+  }
+
+  dd {
+    margin: 0;
+    font-size: 0.97rem;
+    line-height: 1.8;
+    color: var(--muted);
+  }
+</style>
