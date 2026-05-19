@@ -13,7 +13,6 @@ const isHome = path === '/';
   <ul>
     <li><a href="/#youth" class={isHome ? 'nav-active' : undefined}>Youth Tag Rugby</a></li>
     <li><a href="/#vision" class={isHome ? 'nav-active' : undefined}>Vision</a></li>
-    <li><a href="/#interest" class={isHome ? 'nav-active' : undefined}>Founding List</a></li>
     <li><a href="/#interest" role="button">Join the Founding List</a></li>
   </ul>
 </nav>
@@ -24,7 +23,7 @@ const isHome = path === '/';
   }
 
   @media (max-width: 760px) {
-    nav ul:last-child li:nth-child(-n + 3) {
+    nav ul:last-child li:nth-child(-n + 2) {
       display: none;
     }
   }
