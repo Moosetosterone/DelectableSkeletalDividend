@@ -155,6 +155,8 @@ const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mqenvybp';
       if (res.ok) {
         form.style.display = 'none';
         success.style.display = 'block';
+        success.setAttribute('tabindex', '-1');
+        success.focus();
         success.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       } else {
         const data = await res.json().catch(() => ({}));
