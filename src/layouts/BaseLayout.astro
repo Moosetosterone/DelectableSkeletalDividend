@@ -15,7 +15,7 @@ const {
 
 // Absolute URLs required for og:image and canonical to work in social previews.
 // Update astro.config.mjs `site` when the real domain is confirmed.
-const siteBase = Astro.site ?? new URL('https://spotsylvania-rfc.replit.app');
+const siteBase = Astro.site ?? new URL('https://spotsylvaniarugby.org');
 const canonicalURL = new URL(Astro.url.pathname, siteBase);
 const ogImageURL = new URL(ogImage, siteBase);
 ---
