@@ -436,4 +436,3 @@ After first launch posts
 \- Identify possible sponsor leads.  
 \- Send welcome email.  
 \- Prepare interest meeting if response is strong.
-

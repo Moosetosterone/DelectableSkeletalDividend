@@ -9,20 +9,20 @@
 /* --- Custom properties ------------------------------------ */
 
 :root {
-  --navy: #0D1F2D;
-  --green: #1E3D2E;
-  --gold: #B89A4A;
-  --cream: #F6F2E6;
-  --light: #EDE8D8;
+  --navy: #0d1f2d;
+  --green: #1e3d2e;
+  --gold: #b89a4a;
+  --cream: #f6f2e6;
+  --light: #ede8d8;
   /* reserved — kit section accent */
-  --burgundy: #7A1F28;
+  --burgundy: #7a1f28;
   --text: #1c1208;
   --muted: #6b5e4a;
 
-  --pico-primary: #B89A4A;
-  --pico-primary-background: #B89A4A;
-  --pico-primary-border: #B89A4A;
-  --pico-primary-inverse: #1E3D2E;
+  --pico-primary: #b89a4a;
+  --pico-primary-background: #b89a4a;
+  --pico-primary-border: #b89a4a;
+  --pico-primary-inverse: #1e3d2e;
   --pico-font-family: 'Libre Baskerville', Georgia, serif;
 
   --section-pad-v: 110px;

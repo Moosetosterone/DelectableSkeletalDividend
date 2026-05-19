@@ -72,14 +72,14 @@ The club is the unifying culture-carrier. It owns the mission, values, player fo
 
 Used for:
 
-* Website  
-* Official club documents  
-* Letterhead  
-* Certificates  
-* Sponsor materials  
-* Awards  
-* Banners  
-* Founder/board materials
+- Website
+- Official club documents
+- Letterhead
+- Certificates
+- Sponsor materials
+- Awards
+- Banners
+- Founder/board materials
 
 The formal crest is the “constitutional symbol” of the club.
 
@@ -87,14 +87,14 @@ The formal crest is the “constitutional symbol” of the club.
 
 Used for:
 
-* Jerseys  
-* Shorts  
-* Training tops  
-* Polos  
-* Hats  
-* Team apparel  
-* Social graphics  
-* Age-level communications
+- Jerseys
+- Shorts
+- Training tops
+- Polos
+- Hats
+- Team apparel
+- Social graphics
+- Age-level communications
 
 The simplified marks represent developmental stages within the club.
 
@@ -108,17 +108,17 @@ The simplified marks represent developmental stages within the club.
 
 **Elements:**
 
-* Traditional shield  
-* Forest green outer border  
-* Antique gold inner border  
-* Cream/ivory field  
-* Burgundy chevron  
-* Central stag head  
-* Oak leaf/acorn motif  
-* Anvil  
-* Cannon wheel  
-* Motto ribbon: **Patior ut Potiar**  
-* Founding year: **Est. 2026**, assuming 2026 remains the correct year
+- Traditional shield
+- Forest green outer border
+- Antique gold inner border
+- Cream/ivory field
+- Burgundy chevron
+- Central stag head
+- Oak leaf/acorn motif
+- Anvil
+- Cannon wheel
+- Motto ribbon: **Patior ut Potiar**
+- Founding year: **Est. 2026**, assuming 2026 remains the correct year
 
 **Meaning:**  
 The formal crest represents the full institution: local heritage, growth, formation, strength, and controlled courage.
@@ -164,21 +164,20 @@ Recommended structure:
 
 Examples:
 
-* **SRFC Young Bucks U6 & below**  
-* **SRFC Stags U8**  
-* **SRFC Stags U10 Flag**  
-* **SRFC Stags Touch Rugby**  
-* **SRFC Forge JV XV**  
-* **SRFC Forge 7s**  
-* **SRFC Cannons Varsity XV**  
-* **SRFC Cannons Varsity 7s**
+- **SRFC Young Bucks U6 & below**
+- **SRFC Stags U8**
+- **SRFC Stags U10 Flag**
+- **SRFC Stags Touch Rugby**
+- **SRFC Forge JV XV**
+- **SRFC Forge 7s**
+- **SRFC Cannons Varsity XV**
+- **SRFC Cannons Varsity 7s**
 
 For public-facing simplicity:
 
-* **Touch / Tag / Flag:** SRFC Stags  
-* **JV Tackle:** SRFC Forge  
-* **Varsity Tackle:** SRFC Cannons  
-  ---
+- **Touch / Tag / Flag:** SRFC Stags
+- **JV Tackle:** SRFC Forge
+- ## **Varsity Tackle:** SRFC Cannons
 
   ## **9\. Symbolic System**
 
@@ -186,23 +185,23 @@ For public-facing simplicity:
 
 Represents:
 
-* Youth  
-* Growth  
-* Nobility  
-* Vigilance  
-* Local woodland character  
-* Strength over time  
-* Formation in early stages
+- Youth
+- Growth
+- Nobility
+- Vigilance
+- Local woodland character
+- Strength over time
+- Formation in early stages
 
   ### **Oak Leaf / Acorn**
 
 Represents:
 
-* Rootedness  
-* Local land and woodland  
-* Growth from small beginnings  
-* Strength and endurance  
-* Generational continuity
+- Rootedness
+- Local land and woodland
+- Growth from small beginnings
+- Strength and endurance
+- Generational continuity
 
 Best used in the formal crest and supporting brand graphics.
 
@@ -210,29 +209,29 @@ Best used in the formal crest and supporting brand graphics.
 
 Represents:
 
-* Formation  
-* Discipline  
-* Craft  
-* Refinement  
-* Character under pressure  
-* Strength shaped over time
+- Formation
+- Discipline
+- Craft
+- Refinement
+- Character under pressure
+- Strength shaped over time
 
   ### **Hammer & Anvil**
 
 Represents:
 
-* Active formation  
-* Pressure, work, and maturity  
-* Strength forged through discipline
+- Active formation
+- Pressure, work, and maturity
+- Strength forged through discipline
 
   ### **Cannon Wheel**
 
 Represents:
 
-* Spotsylvania heritage  
-* Controlled strength  
-* Local history  
-* Readiness and responsibility
+- Spotsylvania heritage
+- Controlled strength
+- Local history
+- Readiness and responsibility
 
 The wheel should remain restrained and historical, not militaristic.
 
@@ -240,12 +239,12 @@ The wheel should remain restrained and historical, not militaristic.
 
 Represents:
 
-* Heraldic continuity  
-* Spotsylvania / Spottiswood inspiration  
-* Ascent  
-* Shelter  
-* Formation  
-* Shared club structure
+- Heraldic continuity
+- Spotsylvania / Spottiswood inspiration
+- Ascent
+- Shelter
+- Formation
+- Shared club structure
 
 The chevron is one of the strongest unifying devices across the whole identity.
 
@@ -268,12 +267,12 @@ The chevron is one of the strongest unifying devices across the whole identity.
 
 Use this with restraint. It works best on:
 
-* Formal crest  
-* Website About page  
-* Founder materials  
-* Awards  
-* Internal culture pieces  
-* Back-neck detail on heritage apparel
+- Formal crest
+- Website About page
+- Founder materials
+- Awards
+- Internal culture pieces
+- Back-neck detail on heritage apparel
 
 Avoid making the Latin motto the dominant public-facing phrase for younger families. Let **Formed Through Rugby** do the public-facing work.
 
@@ -281,33 +280,32 @@ Avoid making the Latin motto the dominant public-facing phrase for younger famil
 
 Use words such as:
 
-* Formation  
-* Courage  
-* Discipline  
-* Fortitude  
-* Humility  
-* Service  
-* Brotherhood  
-* Respect  
-* Responsibility  
-* Resilience  
-* Honor  
-* Stewardship  
-* Sacrifice  
-* Teamwork  
-* Controlled strength
+- Formation
+- Courage
+- Discipline
+- Fortitude
+- Humility
+- Service
+- Brotherhood
+- Respect
+- Responsibility
+- Resilience
+- Honor
+- Stewardship
+- Sacrifice
+- Teamwork
+- Controlled strength
 
 Avoid:
 
-* Destroy  
-* Crush  
-* Dominate  
-* Savage  
-* War  
-* Kill  
-* Elite-only  
-* Fearless warriors  
-  ---
+- Destroy
+- Crush
+- Dominate
+- Savage
+- War
+- Kill
+- Elite-only
+- ## Fearless warriors
 
   ## **11\. Color Palette**
 
@@ -351,12 +349,12 @@ Heritage accent and alternate kit color. Represents courage, sacrifice, local he
 
 Recommended treatment:
 
-* Forest green jersey  
-* Cream collar/placket  
-* Subtle burgundy trim  
-* Antique gold detail where appropriate  
-* Forest green shorts  
-* Cream and burgundy striping on cuffs/shorts
+- Forest green jersey
+- Cream collar/placket
+- Subtle burgundy trim
+- Antique gold detail where appropriate
+- Forest green shorts
+- Cream and burgundy striping on cuffs/shorts
 
   ### **Away Kits**
 
@@ -365,11 +363,11 @@ Recommended treatment:
 
 Recommended treatment:
 
-* Cream/ivory jersey  
-* Forest green collar/placket  
-* Forest green shoulder or side trim  
-* Subtle burgundy cuff or piping accents  
-* Forest green shorts
+- Cream/ivory jersey
+- Forest green collar/placket
+- Forest green shoulder or side trim
+- Subtle burgundy cuff or piping accents
+- Forest green shorts
 
 This is the best away direction: traditional, readable, and still unmistakably SRFC.
 
@@ -380,11 +378,11 @@ This is the best away direction: traditional, readable, and still unmistakably S
 
 Recommended treatment:
 
-* Deep burgundy jersey  
-* Cream collar/placket  
-* Forest green trim  
-* Burgundy shorts  
-* Cream/green trim at cuffs and hems
+- Deep burgundy jersey
+- Cream collar/placket
+- Forest green trim
+- Burgundy shorts
+- Cream/green trim at cuffs and hems
 
 Avoid bright red. The red kit should be **deep burgundy / heritage red**, not modern athletic scarlet.
 
@@ -396,14 +394,14 @@ Avoid bright red. The red kit should be **deep burgundy / heritage red**, not mo
 
 Use for:
 
-* Website  
-* Letterhead  
-* Official club communications  
-* Parent handbooks  
-* Certificates  
-* Awards  
-* Sponsor packages  
-* Large banners
+- Website
+- Letterhead
+- Official club communications
+- Parent handbooks
+- Certificates
+- Awards
+- Sponsor packages
+- Large banners
 
 Do not use the formal crest where it will be too small to read.
 
@@ -411,42 +409,41 @@ Do not use the formal crest where it will be too small to read.
 
 Use for:
 
-* Touch / tag / flag rugby kits  
-* Young players’ apparel  
-* Youth registration graphics  
-* Family-facing materials  
-* Possible all-club merchandise where a welcoming symbol is preferred
+- Touch / tag / flag rugby kits
+- Young players’ apparel
+- Youth registration graphics
+- Family-facing materials
+- Possible all-club merchandise where a welcoming symbol is preferred
 
   ### **SRFC Cannon Wheel Badge**
 
 Use for:
 
-* JV tackle rugby kits  
-* Middle development tackle teams  
-* Tackle pathway materials  
-* Controlled-strength messaging
+- JV tackle rugby kits
+- Middle development tackle teams
+- Tackle pathway materials
+- Controlled-strength messaging
 
   ### **SRFC Hammer & Anvil Badge**
 
 Use for:
 
-* Varsity tackle rugby kits  
-* Senior youth team apparel  
-* Varsity awards  
-* Leadership and formation messaging
+- Varsity tackle rugby kits
+- Senior youth team apparel
+- Varsity awards
+- Leadership and formation messaging
 
   ### **Shared kit identifier**
 
 To keep the club unified, all kits should include at least one common element:
 
-* Same shield shape  
-* Same SRFC typography  
-* Same chevron  
-* Same color palette  
-* Same trim pattern  
-* Optional back-neck phrase: **Formed Through Rugby**  
-* Optional inside-collar phrase: **Patior ut Potiar**  
-  ---
+- Same shield shape
+- Same SRFC typography
+- Same chevron
+- Same color palette
+- Same trim pattern
+- Optional back-neck phrase: **Formed Through Rugby**
+- ## Optional inside-collar phrase: **Patior ut Potiar**
 
   ## **14\. Rule of Tincture / Contrast Guidance**
 
@@ -454,12 +451,12 @@ The brand is heraldry-inspired, not bound to strict heraldic law.
 
 Use the rule of tincture as a contrast principle:
 
-* Green on cream works well  
-* Burgundy on cream works well  
-* Cream on green works well  
-* Gold on green works well  
-* Gold on cream may need a dark outline  
-* Green on burgundy should use a cream or gold outline
+- Green on cream works well
+- Burgundy on cream works well
+- Cream on green works well
+- Gold on green works well
+- Gold on cream may need a dark outline
+- Green on burgundy should use a cream or gold outline
 
 For the simplified Hammer & Anvil mark, the green hammer over the burgundy chevron is acceptable because the cream outline improves contrast. For embroidery, thicken the cream outline slightly if needed.
 
@@ -471,11 +468,11 @@ Use classic, readable serif typography.
 
 Avoid:
 
-* Blackletter as a main type treatment  
-* Overly medieval fonts  
-* Esports fonts  
-* Corporate sans-serif blandness  
-* Hyper-modern athletic fonts
+- Blackletter as a main type treatment
+- Overly medieval fonts
+- Esports fonts
+- Corporate sans-serif blandness
+- Hyper-modern athletic fonts
 
 For the Latin motto:  
 **PATIOR UT POTIAR** should be set in small caps, letter-spaced, and readable — not blackletter.
@@ -486,28 +483,27 @@ For the Latin motto:
 
 The SRFC visual system should be:
 
-* Traditional  
-* Shield-based  
-* Heraldry-inspired  
-* Rugby-club appropriate  
-* Vector-friendly  
-* Embroidery-friendly  
-* Legible at small sizes  
-* Restrained and dignified  
-* Warm rather than corporate  
-* Rugged without being aggressive
+- Traditional
+- Shield-based
+- Heraldry-inspired
+- Rugby-club appropriate
+- Vector-friendly
+- Embroidery-friendly
+- Legible at small sizes
+- Restrained and dignified
+- Warm rather than corporate
+- Rugged without being aggressive
 
 Avoid:
 
-* Gradients  
-* Chrome effects  
-* Aggressive mascot faces  
-* Explosions  
-* Skulls  
-* Crossed weapons  
-* Excessive scrollwork  
-* Too many symbols in the simplified kit marks  
-  ---
+- Gradients
+- Chrome effects
+- Aggressive mascot faces
+- Explosions
+- Skulls
+- Crossed weapons
+- Excessive scrollwork
+- ## Too many symbols in the simplified kit marks
 
   ## **17\. Sample Website Copy**
 
@@ -525,22 +521,22 @@ Design and maintain a traditional-modern rugby identity for **Spotsylvania Rugby
 
 The system includes:
 
-1. **Formal Club Crest** — website and official materials  
-2. **SRFC Stags Badge** — touch / tag / flag rugby  
-3. **SRFC Cannons Badge** — JV tackle rugby  
-4. **SRFC Forge Badge** — varsity tackle rugby  
-5. **Home Kit** — forest green  
-6. **Away Kit** — cream / ivory  
+1. **Formal Club Crest** — website and official materials
+2. **SRFC Stags Badge** — touch / tag / flag rugby
+3. **SRFC Cannons Badge** — JV tackle rugby
+4. **SRFC Forge Badge** — varsity tackle rugby
+5. **Home Kit** — forest green
+6. **Away Kit** — cream / ivory
 7. **Heritage Kit** — deep burgundy
 
 Core identity:
 
-* Traditional shield structure  
-* Forest green, cream, antique gold, and heritage burgundy  
-* Burgundy chevron as unifying heraldic device  
-* Stag, oak, anvil, and cannon wheel as symbolic family  
-* Serious but welcoming youth club tone  
-* Mission of forming young people through rugby
+- Traditional shield structure
+- Forest green, cream, antique gold, and heritage burgundy
+- Burgundy chevron as unifying heraldic device
+- Stag, oak, anvil, and cannon wheel as symbolic family
+- Serious but welcoming youth club tone
+- Mission of forming young people through rugby
 
 Primary brand idea:
 

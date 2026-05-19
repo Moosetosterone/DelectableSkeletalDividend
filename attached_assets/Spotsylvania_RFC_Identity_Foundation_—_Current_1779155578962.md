@@ -641,4 +641,3 @@ Separate documents should exist for:
 \- meeting notes
 
 This document governs the identity system. Other documents apply it.
-
