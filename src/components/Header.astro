@@ -1,5 +1,7 @@
 ---
 // Header.astro — fixed top navigation bar
+const path = Astro.url.pathname;
+const isHome = path === '/';
 ---
 
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -9,14 +11,18 @@
     <li><strong>Spotsylvania RFC</strong></li>
   </ul>
   <ul>
-    <li><a href="#youth">Youth Tag Rugby</a></li>
-    <li><a href="#vision">Vision</a></li>
-    <li><a href="#interest">Founding List</a></li>
-    <li><a href="#interest" role="button">Register Interest</a></li>
+    <li><a href="/#youth" class={isHome ? 'nav-active' : undefined}>Youth Tag Rugby</a></li>
+    <li><a href="/#vision" class={isHome ? 'nav-active' : undefined}>Vision</a></li>
+    <li><a href="/#interest" class={isHome ? 'nav-active' : undefined}>Founding List</a></li>
+    <li><a href="/#interest" role="button">Register Interest</a></li>
   </ul>
 </nav>
 
 <style>
+  nav a.nav-active {
+    color: var(--gold);
+  }
+
   @media (max-width: 760px) {
     nav ul:last-child li:nth-child(-n + 3) {
       display: none;
