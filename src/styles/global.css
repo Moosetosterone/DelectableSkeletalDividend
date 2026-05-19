@@ -46,13 +46,6 @@ body {
   overflow-x: hidden;
 }
 
-}
-
-main.container {
-  max-width: none;
-  padding: 0;
-}
-
 /* --- Accessibility ---------------------------------------- */
 
 .skip-link {
