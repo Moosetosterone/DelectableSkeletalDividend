@@ -163,12 +163,12 @@ const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mqenvybp';
         errEl.textContent =
           (data as any)?.error || 'Something went wrong. Please try again or email us directly.';
         btn.disabled = false;
-        btn.textContent = 'Register My Interest';
+        btn.textContent = 'Join the Founding List';
       }
     } catch {
       errEl.textContent = 'Network error. Please check your connection and try again.';
       btn.disabled = false;
-      btn.textContent = 'Register My Interest';
+      btn.textContent = 'Join the Founding List';
     }
   });
 </script>

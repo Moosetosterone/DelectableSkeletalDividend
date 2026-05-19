@@ -6,17 +6,13 @@ import path from 'path';
 
 export const GET: APIRoute = async () => {
   const root = process.cwd();
-  const crestBuffer = readFileSync(
-    path.join(root, 'public/assets/spotsylvania-rfc-crest.png')
-  );
+  const crestBuffer = readFileSync(path.join(root, 'public/assets/spotsylvania-rfc-crest.png'));
   const crestSrc = `data:image/png;base64,${crestBuffer.toString('base64')}`;
 
-  const fontNormal = readFileSync(
-    path.join(root, 'public/fonts/playfair-display-700.ttf')
-  ).buffer as ArrayBuffer;
-  const fontItalic = readFileSync(
-    path.join(root, 'public/fonts/playfair-display-700-italic.ttf')
-  ).buffer as ArrayBuffer;
+  const fontNormal = readFileSync(path.join(root, 'public/fonts/playfair-display-700.ttf'))
+    .buffer as ArrayBuffer;
+  const fontItalic = readFileSync(path.join(root, 'public/fonts/playfair-display-700-italic.ttf'))
+    .buffer as ArrayBuffer;
 
   const svg = await satori(
     {
