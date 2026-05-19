@@ -1,0 +1,69 @@
+Create a simple practice version of a Culpeper Youth Rugby website inside this Astro project.
+
+Do not delete the existing Spotsylvania RFC work. Instead, create a separate page route at:
+
+src/pages/culpeper.astro
+
+Use existing project patterns, components, and CSS where possible. Do not add new dependencies.
+
+Use this site goal:
+A simple youth rugby club homepage that helps parents and players understand the club and register or make contact.
+
+Use this structure on the page:
+1. Hero
+   - Club name: Culpeper Youth Rugby Football Club
+   - Short name: Culpeper Youth Rugby
+   - CTA: Register for Summer Rugby
+   - Secondary CTA: Contact the Club
+   - Mention new and returning players are welcome.
+
+2. Current Season
+   - Summer 2026 Rugby
+   - Practices begin May 26
+   - Season kickoff June 6
+   - No games July 5
+   - Championships July 11
+   - Note: spring 2026 registered players are already registered for summer.
+
+3. About the Club
+   - Youth rugby for Culpeper and surrounding counties
+   - Pre-K through high school
+   - Tag rugby for younger ages, tackle rugby for older age groups
+   - Welcoming, safe, development-focused environment.
+
+4. Principles
+   Use these exact principle labels and meanings:
+   - Unity: Working together towards the same goal — through triumphs and struggles.
+   - Courage: Overcoming obstacles through teamwork and preparation.
+   - Respect: Showing positivity to others on and off the pitch.
+
+5. Learn About Rugby
+   - Explain that rugby is beginner-friendly
+   - Emphasize teamwork, movement, confidence, and respect
+   - Write for skeptical parents.
+
+6. Get Involved
+   - Player
+   - Parent
+   - Coach
+   - Volunteer
+   - Sponsor
+   - Supporter
+
+7. Contact / Register
+   - Create a simple non-functional placeholder form with name, email, player age/grade, and message.
+   - Add a visible note: “Practice build only — replace with official registration/contact links before launch.”
+
+Style:
+- Dark navy background
+- White text
+- Gold accents
+- Clean, confident, youth-sports feel
+- Do not recreate or approximate the CYRFC logo.
+- Do not use unverified logo assets.
+- Use text branding only.
+
+Important:
+- This is a practice build based on publicly visible site content and a developer branding brief.
+- Avoid making claims that are not supported.
+- Run npm run build and fix errors.
