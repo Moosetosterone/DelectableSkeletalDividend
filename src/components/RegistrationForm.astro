@@ -39,6 +39,9 @@ const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mqenvybp';
       </div>
 
       <form class="interest-form" id="interestForm" action={FORMSPREE_ENDPOINT} method="POST">
+        <!-- Honeypot field — do not remove. 
+             Formspree uses _gotcha to filter bot submissions.
+             This field must stay hidden and empty for spam protection to work. -->
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
         <div class="form-row">
           <div class="field-group">
